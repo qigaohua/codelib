@@ -9,6 +9,7 @@
 #define	IN_CLASSC(a)		((((long int) (a)) & 0xe0000000) == 0xc0000000)
 #define	IN_CLASSC_NET		0xffffff00
 
+
 int Socket(const char *host, int clientPort);
 unsigned long ip_get_mask(unsigned long addr);
 static inline int get_mac_by_name(const char *device, unsigned char *buf);
