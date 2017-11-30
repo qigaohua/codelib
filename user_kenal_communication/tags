@@ -1,0 +1,166 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUF_SIZE	netlink-exam-kern.c	9;"	d	file:
+MAX_MSGSIZE	netlink-exam-user-recv.c	7;"	d	file:
+MAX_MSGSIZE	netlink-exam-user-send.c	7;"	d	file:
+MAX_SIZE	kern-boot-params.c	6;"	d	file:
+MYCHRDEV_CAPACITY	syscall-exam-kern.c	11;"	d	file:
+MYCHRDEV_IOCTL_BASE	syscall-exam.h	23;"	d
+MYCHRDEV_IOCTL_GET_INFO	syscall-exam.h	27;"	d
+MYCHRDEV_IOCTL_SET_TRUNCATE	syscall-exam.h	28;"	d
+MYCHRDEV_IOR	syscall-exam.h	24;"	d
+MYCHRDEV_IOW	syscall-exam.h	25;"	d
+MYCHRDEV_MAX_MINOR	syscall-exam-kern.c	10;"	d	file:
+MY_INT_EXAM	sysctl-exam.h	/^        MY_INT_EXAM = 1,$/;"	e	enum:__anon1
+MY_MAX_SIZE	sysctl-exam.h	7;"	d
+MY_ROOT	sysctl-exam.h	6;"	d
+MY_STRING_EXAM	sysctl-exam.h	/^        MY_STRING_EXAM = 2,$/;"	e	enum:__anon1
+OSNAMESZ	sysctl-exam-user.c	19;"	d	file:
+SIZE	sysctl-exam-user.c	18;"	d	file:
+STR_MAX_SIZE	procfs_exam.c	10;"	d	file:
+TASK_COMM_LEN	syscall-exam.h	7;"	d
+TASK_COMM_LEN	syscall-exam.h	8;"	d
+WRITE_PERIOD	relayfs-exam.c	7;"	d	file:
+_SYSCALL_EXAM_H	syscall-exam.h	3;"	d
+_SYSCTL_EXAM_H	sysctl-exam.h	3;"	d
+available_len	syscall-exam.h	/^        unsigned int available_len;$/;"	m	struct:mychrdev_info
+big_buffer	procfs_exam.c	/^static char big_buffer[65536];$/;"	v	file:
+big_buffer_len	procfs_exam.c	/^static int big_buffer_len = 0;$/;"	v	file:
+bigfile_read_proc	procfs_exam.c	/^int bigfile_read_proc(char *page, char **start, off_t off,$/;"	f
+bigfile_write_proc	procfs_exam.c	/^int bigfile_write_proc(struct file *file, const char __user *buffer,$/;"	f
+bool_entry	debugfs_exam.c	/^static struct dentry *root_entry, *u8_entry, *u16_entry, *u32_entry, *bool_entry;$/;"	v	typeref:struct:	file:
+buf	syscall-exam-kern.c	/^        char buf[MYCHRDEV_CAPACITY];$/;"	m	struct:mychrdev_data	file:
+buffer	netlink-exam-kern.c	/^static unsigned char buffer[BUF_SIZE];$/;"	v	file:
+buffer	relayfs-exam.c	/^static char buffer[256];$/;"	v	file:
+buffer	syscall-exam-kern.c	30;"	d	file:
+buffer_tail	netlink-exam-kern.c	/^static unsigned int buffer_tail = 0;$/;"	v	file:
+chan	relayfs-exam.c	/^static struct rchan *   chan;$/;"	v	typeref:struct:rchan	file:
+cleanup	relayfs-exam.c	/^module_exit(cleanup);$/;"	v
+cleanup	relayfs-exam.c	/^static void cleanup(void)$/;"	f	file:
+data	syscall-exam-kern.c	/^        struct mychrdev_data * data;$/;"	m	struct:mychrdev_private	typeref:struct:mychrdev_private::mychrdev_data	file:
+entry	seqfile_exam.c	/^static struct proc_dir_entry *entry;$/;"	v	typeref:struct:proc_dir_entry	file:
+exam_debugfs_exit	debugfs_exam.c	/^module_exit(exam_debugfs_exit);$/;"	v
+exam_debugfs_exit	debugfs_exam.c	/^static void __exit exam_debugfs_exit(void)$/;"	f	file:
+exam_debugfs_init	debugfs_exam.c	/^module_init(exam_debugfs_init);$/;"	v
+exam_debugfs_init	debugfs_exam.c	/^static int __init exam_debugfs_init(void)$/;"	f	file:
+exam_module_exit	module-param-exam.c	/^module_exit(exam_module_exit);$/;"	v
+exam_module_exit	module-param-exam.c	/^static void __exit exam_module_exit(void)$/;"	f	file:
+exam_module_init	module-param-exam.c	/^module_init(exam_module_init);$/;"	v
+exam_module_init	module-param-exam.c	/^static int __init exam_module_init(void)$/;"	f	file:
+exam_seq_exit	seqfile_exam.c	/^module_exit(exam_seq_exit);$/;"	v
+exam_seq_exit	seqfile_exam.c	/^static void __exit exam_seq_exit(void)$/;"	f	file:
+exam_seq_fops	seqfile_exam.c	/^static struct file_operations exam_seq_fops = {$/;"	v	typeref:struct:file_operations	file:
+exam_seq_init	seqfile_exam.c	/^module_init(exam_seq_init);$/;"	v
+exam_seq_init	seqfile_exam.c	/^static int __init exam_seq_init(void)$/;"	f	file:
+exam_seq_op	seqfile_exam.c	/^static struct seq_operations exam_seq_op = {$/;"	v	typeref:struct:seq_operations	file:
+exam_seq_open	seqfile_exam.c	/^static int exam_seq_open(struct inode *inode, struct file *file)$/;"	f	file:
+exit_flag	netlink-exam-kern.c	/^static int exit_flag = 0;$/;"	v	file:
+first_write_flag	procfs_exam.c	/^static int first_write_flag = 1;$/;"	v	file:
+head	syscall-exam.h	/^        unsigned int head;$/;"	m	struct:mychrdev_window
+headptr	syscall-exam-kern.c	/^        unsigned int headptr;$/;"	m	struct:mychrdev_data	file:
+headptr	syscall-exam-kern.c	28;"	d	file:
+init	relayfs-exam.c	/^module_init(init);$/;"	v
+init	relayfs-exam.c	/^static int init(void)$/;"	f	file:
+int_read_proc	procfs_exam.c	/^int int_read_proc(char *page, char **start, off_t off,$/;"	f
+int_var	procfs_exam.c	/^static int int_var;$/;"	v	file:
+int_write_proc	procfs_exam.c	/^int int_write_proc(struct file *file, const char __user *buffer,$/;"	f
+l_next	seqfile_exam.c	/^static void *l_next(struct seq_file *m, void *p, loff_t * pos)$/;"	f	file:
+l_show	seqfile_exam.c	/^static int l_show(struct seq_file *m, void *p)$/;"	f	file:
+l_start	seqfile_exam.c	/^static void *l_start(struct seq_file *m, loff_t * pos)$/;"	f	file:
+l_stop	seqfile_exam.c	/^static void l_stop(struct seq_file *m, void *p)$/;"	f	file:
+len	syscall-exam.h	/^        unsigned int len;$/;"	m	struct:mychrdev_info
+main	netlink-exam-user-recv.c	/^int main(void)$/;"	f
+main	netlink-exam-user-send.c	/^int main(int argc, char * argv[])$/;"	f
+main	syscall-exam-user.c	/^int main(void)$/;"	f
+main	sysctl-exam-user.c	/^int main(int argc, char ** argv)$/;"	f
+minor	syscall-exam-kern.c	/^        int minor;$/;"	m	struct:mychrdev_private	file:
+my_ctl_header	sysctl-exam-kern.c	/^static struct ctl_table_header * my_ctl_header;$/;"	v	typeref:struct:ctl_table_header	file:
+my_invisible_int	module-param-exam.c	/^static int my_invisible_int = 0;$/;"	v	file:
+my_root	sysctl-exam-kern.c	/^static struct ctl_table my_root = {$/;"	v	typeref:struct:ctl_table	file:
+my_sysctl_exam	sysctl-exam-kern.c	/^static struct ctl_table my_sysctl_exam[] = {$/;"	v	typeref:struct:ctl_table	file:
+my_visible_int	module-param-exam.c	/^static int my_visible_int = 0;$/;"	v	file:
+mychardev_init	syscall-exam-kern.c	/^module_init(mychardev_init);$/;"	v
+mychardev_init	syscall-exam-kern.c	/^static int __init mychardev_init(void)$/;"	f	file:
+mychardev_remove	syscall-exam-kern.c	/^module_exit(mychardev_remove);$/;"	v
+mychardev_remove	syscall-exam-kern.c	/^static void __exit mychardev_remove(void)$/;"	f	file:
+mychrdev_data	syscall-exam-kern.c	/^struct mychrdev_data {$/;"	s	file:
+mychrdev_fops	syscall-exam-kern.c	/^struct file_operations mychrdev_fops = {$/;"	v	typeref:struct:file_operations
+mychrdev_info	syscall-exam.h	/^typedef struct mychrdev_info {$/;"	s
+mychrdev_ioctl	syscall-exam-kern.c	/^int mychrdev_ioctl(struct inode * inode, struct file * file, unsigned int cmd, unsigned long argp)$/;"	f
+mychrdev_llseek	syscall-exam-kern.c	/^loff_t mychrdev_llseek(struct file * file, loff_t offset, int seek_flags)$/;"	f
+mychrdev_major	syscall-exam-kern.c	/^static int mychrdev_major;$/;"	v	file:
+mychrdev_mmap	syscall-exam-kern.c	/^int mychrdev_mmap(struct file * file, struct vm_area_struct * vma)$/;"	f
+mychrdev_open	syscall-exam-kern.c	/^int mychrdev_open(struct inode * inode, struct file * file)$/;"	f
+mychrdev_private	syscall-exam-kern.c	/^struct mychrdev_private {$/;"	s	file:
+mychrdev_read	syscall-exam-kern.c	/^ssize_t mychrdev_read(struct file * file, char __user * buf, size_t count, loff_t * ppos)$/;"	f
+mychrdev_release	syscall-exam-kern.c	/^int mychrdev_release(struct inode * inode, struct file * file)$/;"	f
+mychrdev_use_stats	syscall-exam-kern.c	/^static atomic_t mychrdev_use_stats[MYCHRDEV_MAX_MINOR];$/;"	v	file:
+mychrdev_window	syscall-exam.h	/^struct mychrdev_window {$/;"	s
+mychrdev_write	syscall-exam-kern.c	/^ssize_t mychrdev_write(struct file * file, const char __user * buf, size_t count, loff_t * ppos)$/;"	f
+mydata	syscall-exam-kern.c	/^struct mychrdev_data * mydata[MYCHRDEV_MAX_MINOR];$/;"	v	typeref:struct:mychrdev_data
+mydev_info_t	syscall-exam.h	/^} mydev_info_t;$/;"	t	typeref:struct:mychrdev_info
+myint	sysctl-exam-kern.c	/^static int myint;$/;"	v	file:
+myintctl	sysctl-exam-user.c	/^int myintctl[] = {MY_ROOT, MY_INT_EXAM};$/;"	v
+myprocroot	procfs_exam.c	/^static struct proc_dir_entry * myprocroot;$/;"	v	typeref:struct:proc_dir_entry	file:
+mystring	module-param-exam.c	/^static char * mystring = "Hello, World";$/;"	v	file:
+mystring	sysctl-exam-kern.c	/^static char mystring[256];$/;"	v	file:
+mystringctl	sysctl-exam-user.c	/^int mystringctl[] = {MY_ROOT, MY_STRING_EXAM};$/;"	v
+n_subbufs	relayfs-exam.c	/^static size_t           n_subbufs = 4;$/;"	v	file:
+netlink_exam_exit	netlink-exam-kern.c	/^module_exit(netlink_exam_exit);$/;"	v
+netlink_exam_exit	netlink-exam-kern.c	/^static void __exit netlink_exam_exit(void)$/;"	f	file:
+netlink_exam_init	netlink-exam-kern.c	/^module_init(netlink_exam_init);$/;"	v
+netlink_exam_init	netlink-exam-kern.c	/^static int __init netlink_exam_init(void)$/;"	f	file:
+netlink_exam_readproc	netlink-exam-kern.c	/^static int netlink_exam_readproc(char *page, char **start, off_t off,$/;"	f	file:
+netlink_exam_sock	netlink-exam-kern.c	/^static struct sock *netlink_exam_sock;$/;"	v	typeref:struct:sock	file:
+newmyint	sysctl-exam-user.c	/^int newmyint;$/;"	v
+newmyintlen	sysctl-exam-user.c	/^int newmyintlen;$/;"	v
+newmystring	sysctl-exam-user.c	/^char newmystring[MY_MAX_SIZE];$/;"	v
+newmystringlen	sysctl-exam-user.c	/^int newmystringlen;$/;"	v
+offset_in_ppage	syscall-exam.h	/^        unsigned long offset_in_ppage;$/;"	m	struct:mychrdev_info
+oldmyint	sysctl-exam-user.c	/^int oldmyint;$/;"	v
+oldmyintlen	sysctl-exam-user.c	/^int oldmyintlen;$/;"	v
+oldmystring	sysctl-exam-user.c	/^char oldmystring[MY_MAX_SIZE];$/;"	v
+oldmystringlen	sysctl-exam-user.c	/^int oldmystringlen;$/;"	v
+parse_int	kern-boot-params.c	/^static int __init parse_int(char * s)$/;"	f	file:
+parse_int_string	kern-boot-params.c	/^static int __init parse_int_string(char *s)$/;"	f	file:
+parse_string	kern-boot-params.c	/^static int __init parse_string(char *s)$/;"	f	file:
+process_message_thread	netlink-exam-kern.c	/^static int process_message_thread(void * data)$/;"	f	file:
+procfs_exam_exit	procfs_exam.c	/^module_exit(procfs_exam_exit);$/;"	v
+procfs_exam_exit	procfs_exam.c	/^static void __exit procfs_exam_exit(void)$/;"	f	file:
+procfs_exam_init	procfs_exam.c	/^module_init(procfs_exam_init);$/;"	v
+procfs_exam_init	procfs_exam.c	/^static int __init procfs_exam_init(void)$/;"	f	file:
+recv_handler	netlink-exam-kern.c	/^static void recv_handler(struct sock * sk, int length)$/;"	f	file:
+relayfs_callbacks	relayfs-exam.c	/^static struct rchan_callbacks relayfs_callbacks =$/;"	v	typeref:struct:rchan_callbacks	file:
+relayfs_exam_write	relayfs-exam.c	/^void relayfs_exam_write(unsigned long data)$/;"	f
+root_entry	debugfs_exam.c	/^static struct dentry *root_entry, *u8_entry, *u16_entry, *u32_entry, *bool_entry;$/;"	v	typeref:struct:dentry	file:
+setup_example_int	kern-boot-params.c	/^static int setup_example_int;$/;"	v	file:
+setup_example_int_array	kern-boot-params.c	/^static int setup_example_int_array[MAX_SIZE];$/;"	v	file:
+setup_example_string	kern-boot-params.c	/^static char setup_example_string[16];$/;"	v	file:
+string_read_proc	procfs_exam.c	/^int string_read_proc(char *page, char **start, off_t off,$/;"	f
+string_var	procfs_exam.c	/^static char string_var[256];$/;"	v	file:
+string_write_proc	procfs_exam.c	/^int string_write_proc(struct file *file, const char __user *buffer,$/;"	f
+subbuf_size	relayfs-exam.c	/^static size_t           subbuf_size = 65536;$/;"	v	file:
+subbuf_start	relayfs-exam.c	/^static int subbuf_start(struct rchan_buf *buf,$/;"	f	file:
+sysctl	sysctl-exam-user.c	/^int sysctl(int *name, int nlen, void *oldval, size_t *oldlenp,$/;"	f
+sysctl_exam_exit	sysctl-exam-kern.c	/^module_exit(sysctl_exam_exit);$/;"	v
+sysctl_exam_exit	sysctl-exam-kern.c	/^static void __exit sysctl_exam_exit(void)$/;"	f	file:
+sysctl_exam_init	sysctl-exam-kern.c	/^module_init(sysctl_exam_init);$/;"	v
+sysctl_exam_init	sysctl-exam-kern.c	/^static int __init sysctl_exam_init(void)$/;"	f	file:
+tail	syscall-exam.h	/^        unsigned int tail;$/;"	m	struct:mychrdev_window
+tailptr	syscall-exam-kern.c	/^        unsigned int tailptr;$/;"	m	struct:mychrdev_data	file:
+tailptr	syscall-exam-kern.c	29;"	d	file:
+u16_entry	debugfs_exam.c	/^static struct dentry *root_entry, *u8_entry, *u16_entry, *u32_entry, *bool_entry;$/;"	v	typeref:struct:	file:
+u32_entry	debugfs_exam.c	/^static struct dentry *root_entry, *u8_entry, *u16_entry, *u32_entry, *bool_entry;$/;"	v	typeref:struct:	file:
+u8_entry	debugfs_exam.c	/^static struct dentry *root_entry, *u8_entry, *u16_entry, *u32_entry, *bool_entry;$/;"	v	typeref:struct:	file:
+user_name	syscall-exam-kern.c	/^        char user_name[TASK_COMM_LEN];$/;"	m	struct:mychrdev_private	file:
+user_name	syscall-exam.h	/^        char user_name[TASK_COMM_LEN];$/;"	m	struct:mychrdev_info
+user_pid	syscall-exam-kern.c	/^        pid_t user_pid;$/;"	m	struct:mychrdev_private	file:
+user_pid	syscall-exam.h	/^        pid_t user_pid;$/;"	m	struct:mychrdev_info
+var16	debugfs_exam.c	/^static u16 var16;$/;"	v	file:
+var32	debugfs_exam.c	/^static u32 var32;$/;"	v	file:
+var8	debugfs_exam.c	/^static u8 var8;$/;"	v	file:
+varbool	debugfs_exam.c	/^static u32 varbool;$/;"	v	file:
