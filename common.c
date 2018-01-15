@@ -1,8 +1,6 @@
 
 
 
-#define likely(x)       __builtin_expect(!!(x), 1)
-#define unlikely(x)     __builtin_expect(!!(x), 0)
 
 
 /*根据key从文件fname中找出对应值

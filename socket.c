@@ -34,11 +34,11 @@ int Socket(const char *host, int clientPort)
     ad.sin_port = htons(clientPort);
     
     sock = socket(AF_INET, SOCK_STREAM, 0);
-    if (sock < 0)
+    if (sock < 0) 
 		perror("line:%d fun:%s socket() error", __LINE__, __FUNCTION__);
-/*        return sock;
+
     if (connect(sock, (struct sockaddr *)&ad, sizeof(ad)) < 0)
-        return -1;*/
+        return -1;
     return sock;
 }
 
