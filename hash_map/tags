@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+HMAP_CHAIN_LENGTH	hashmap.c	13;"	d	file:
+HMAP_E_FAIL	hashmap.h	15;"	d
+HMAP_E_KEYUSED	hashmap.h	11;"	d
+HMAP_E_NOTFOUND	hashmap.h	13;"	d
+HMAP_E_OUTMEM	hashmap.h	12;"	d
+HMAP_E_OVERFLOW	hashmap.h	14;"	d
+HMAP_INITIAL_SIZE	hashmap.c	12;"	d	file:
+HMAP_S_OK	hashmap.h	16;"	d
+_CRTDBG_MAP_ALLOC	main.c	14;"	d	file:
+_HASHMAP_H_INCLUDED	hashmap.h	5;"	d
+_find_hash_index	hashmap.c	/^static unsigned int _find_hash_index(hashmap_map_t * m, const char* keystring){$/;"	f	file:
+_hashmap_elem_t	hashmap.c	/^typedef struct _hashmap_elem_t{$/;"	s	file:
+_hashmap_hash	hashmap.c	/^static int _hashmap_hash(hmap_t in, char* key){$/;"	f	file:
+_hashmap_map_t	hashmap.c	/^typedef struct _hashmap_map_t{$/;"	s	file:
+_hashmap_rehash	hashmap.c	/^static int _hashmap_rehash(hmap_t in){$/;"	f	file:
+_hmap_pair_t	hashmap.h	/^typedef struct _hmap_pair_t {  $/;"	s
+_use_state	hashmap.c	/^typedef enum _use_state {$/;"	g	file:
+crc32	hashmap.c	/^static unsigned long crc32(const unsigned char *s, unsigned int len)$/;"	f	file:
+crc32_tab	hashmap.c	/^static unsigned long crc32_tab[] = {$/;"	v	file:
+data	hashmap.c	/^  void_ptr    data;  \/* pointer to value memory allocated by callee *\/$/;"	m	struct:_hashmap_elem_t	file:
+data	hashmap.h	/^  void_ptr  data;  $/;"	m	struct:_hmap_pair_t
+elems	hashmap.c	/^  hashmap_elem_t *elems;$/;"	m	struct:_hashmap_map_t	file:
+free_data	main.c	/^static int free_data(void* data, void *arg) {$/;"	f	file:
+free_elem	main.c	/^static int free_elem(void* elem, void *arg) {$/;"	f	file:
+hashmap_create	hashmap.c	/^hmap_t hashmap_create() {$/;"	f
+hashmap_destroy	hashmap.c	/^void hashmap_destroy(hmap_t in, hmap_callback_func fnFreeValue, void_ptr arg){$/;"	f
+hashmap_elem_t	hashmap.c	/^} hashmap_elem_t;$/;"	t	typeref:struct:_hashmap_elem_t	file:
+hashmap_get	hashmap.c	/^int hashmap_get(hmap_t in, const char* key, void_ptr *value){$/;"	f
+hashmap_iterate	hashmap.c	/^int hashmap_iterate(hmap_t in, hmap_callback_func fnIterValue, void_ptr arg) {$/;"	f
+hashmap_map_t	hashmap.c	/^} hashmap_map_t;$/;"	t	typeref:struct:_hashmap_map_t	file:
+hashmap_put	hashmap.c	/^int hashmap_put(hmap_t in, char* key, void_ptr value){$/;"	f
+hashmap_remove	hashmap.c	/^int hashmap_remove(hmap_t in, char* key, void_ptr *outValue){$/;"	f
+hashmap_size	hashmap.c	/^int hashmap_size(hmap_t in){$/;"	f
+hmap_callback_func	hashmap.h	/^typedef int (*hmap_callback_func)(void_ptr, void_ptr);  $/;"	t
+hmap_pair_t	hashmap.h	/^} hmap_pair_t;  $/;"	t	typeref:struct:_hmap_pair_t
+hmap_t	hashmap.h	/^typedef void_ptr hmap_t;  $/;"	t
+iter_elem	main.c	/^static int iter_elem(void* elem, void *arg) {$/;"	f	file:
+key	hashmap.c	/^  char       *key;   \/* pointer to actual key storage *\/$/;"	m	struct:_hashmap_elem_t	file:
+key	hashmap.h	/^  char     *key;  $/;"	m	struct:_hmap_pair_t
+key	main.c	/^  char   key[20];$/;"	m	struct:userelem_t	file:
+main	main.c	/^int main(int argc, char* argv[])$/;"	f
+map	main.c	/^  hmap_t map;  \/* userelem map *\/$/;"	m	struct:userdata_t	file:
+name	main.c	/^  char   name[20];$/;"	m	struct:userdata_t	file:
+size	hashmap.c	/^  int size;$/;"	m	struct:_hashmap_map_t	file:
+table_size	hashmap.c	/^  int table_size;$/;"	m	struct:_hashmap_map_t	file:
+unused_0	hashmap.c	/^  unused_0 = 0,$/;"	e	enum:_use_state	file:
+use_state	hashmap.c	/^} use_state;$/;"	t	typeref:enum:_use_state	file:
+used	hashmap.c	/^  use_state   used;  \/* unused_0, used_1 *\/$/;"	m	struct:_hashmap_elem_t	file:
+used_1	hashmap.c	/^  used_1   = 1$/;"	e	enum:_use_state	file:
+userdata	main.c	/^} userdata;$/;"	t	typeref:struct:userdata_t	file:
+userdata_t	main.c	/^typedef struct userdata_t {$/;"	s	file:
+userelem	main.c	/^} userelem;$/;"	t	typeref:struct:userelem_t	file:
+userelem_t	main.c	/^typedef struct userelem_t {$/;"	s	file:
+value	main.c	/^  char  *value;$/;"	m	struct:userelem_t	file:
+void_ptr	hashmap.h	/^typedef void* void_ptr;  $/;"	t
