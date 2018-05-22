@@ -54,6 +54,12 @@ gh_list_t* gh_list_new (int32_t size, func cb_free)
 		return gl;
 }
 
+
+/*
+ * 因为 gl->elems 是 (void **)（指针的指针）, 那么
+ * 在qsort函数中返回比较的元素是 (void **)， 
+ * 所以我们需要一个跳板函数将 (void **) -> (void *) 
+ */
 static __thread 
 int (*gh_list_cmp_curr) (const void *, const void *);
 
@@ -235,12 +241,6 @@ int32_t gh_list_multi_remove_cmp (gh_list_t *gl, void *elem,
 		return cnt;
 }
 
-
-/*
- * 因为 gl->elems 是 (void **)（指针的指针）, 那么
- * 在qsort函数中返回比较的元素是 (void **)， 
- * 所以我们需要一个跳板函数将 (void **) -> (void *) 
- */
 
 void __inline gh_list_clear (gh_list_t *gl)
 {
