@@ -101,7 +101,7 @@ int bst_for_delete(bst_p *root, value_type data)
 	bst_p p = *root, s, parent;
 
 	if (NULL == p) {
-		printf("bst is null");
+		// printf("bst is null\n");
 		return 0;
 	}
 

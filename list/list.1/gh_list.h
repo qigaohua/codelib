@@ -8,9 +8,9 @@
 struct list_head {
 	struct list_head *prev;
 	struct list_head *next;
-}
+};
 
-typedef struct list_head  list_head_t
+typedef struct list_head  list_head_t;
 
 #if _USE_FUNCTION
 static inline void LIST_HEAD_INIT(struct list_head *head)

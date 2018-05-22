@@ -1,0 +1,69 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+GH_LIST_FOREACH	gh_list.h	40;"	d
+GH_LIST_F_ALLOCATED	gh_list.h	49;"	d
+GH_LIST_F_NOTGROWS	gh_list.h	52;"	d
+GH_LIST_F_SORTED	gh_list.h	50;"	d
+GH_LIST_F_UNIQUE	gh_list.h	51;"	d
+GH_UNUSED	gh_list.h	25;"	d
+TEST	gh_list.c	333;"	d	file:
+_GHLIST_H	gh_list.h	2;"	d
+a	gh_list.c	/^	int a;$/;"	m	struct:st	file:
+b	gh_list.c	/^	double b;$/;"	m	struct:st	file:
+c	gh_list.c	/^	char *c;$/;"	m	struct:st	file:
+cb_free	gh_list.h	/^	func cb_free;$/;"	m	struct:gh_list_s
+check_param	gh_list.h	32;"	d
+elems	gh_list.h	/^	void **elems;$/;"	m	struct:gh_list_s
+find_num	gh_list.c	/^int find_num = 0;$/;"	v
+func	gh_list.h	/^typedef void (*func)(void*);$/;"	t
+gh_cnt	gh_list.h	/^	int32_t gh_cnt;$/;"	m	struct:gh_list_s
+gh_flags	gh_list.h	/^    uint32_t gh_flags;	$/;"	m	struct:gh_list_s
+gh_free	gh_list.h	56;"	d
+gh_list_add	gh_list.c	/^int32_t gh_list_add (gh_list_t *gl, void *elem)$/;"	f
+gh_list_add_noduplicate	gh_list.c	/^int32_t gh_list_add_noduplicate (gh_list_t *gl, void *elem, $/;"	f
+gh_list_clear	gh_list.c	/^void __inline gh_list_clear (gh_list_t *gl)$/;"	f
+gh_list_cmp_curr	gh_list.c	/^int (*gh_list_cmp_curr) (const void *, const void *);$/;"	v	file:
+gh_list_cmp_trampoline	gh_list.c	/^int gh_list_cmp_trampoline (const void *_a, const void *_b) {$/;"	f	file:
+gh_list_cnt	gh_list.c	/^int32_t __inline gh_list_cnt (gh_list_t *gl)$/;"	f
+gh_list_copy	gh_list.c	/^gh_list_t* gh_list_copy (gh_list_t *src,$/;"	f
+gh_list_copy_to	gh_list.c	/^int32_t gh_list_copy_to (gh_list_t *dst, gh_list_t *src,$/;"	f
+gh_list_dump	gh_list.c	/^void gh_list_dump (char *what, gh_list_t *gl)$/;"	f
+gh_list_elem	gh_list.c	/^void*  gh_list_elem (gh_list_t *gl, int32_t i)$/;"	f
+gh_list_empty	gh_list.c	/^int32_t __inline gh_list_empty (gh_list_t *gl)$/;"	f
+gh_list_find	gh_list.c	/^void* gh_list_find (gh_list_t *gl, const void *elem,$/;"	f
+gh_list_free	gh_list.c	/^void gh_list_free (gh_list_t *gl)$/;"	f
+gh_list_free_cb	gh_list.c	/^void gh_list_free_cb (gh_list_t *gl, void *ptr)$/;"	f
+gh_list_grow	gh_list.c	/^int gh_list_grow (gh_list_t* gl, int32_t size)$/;"	f
+gh_list_init	gh_list.c	/^gh_list_t* gh_list_init (gh_list_t *gl, int32_t size, func cb_free)$/;"	f
+gh_list_multi_remove_cmp	gh_list.c	/^int32_t gh_list_multi_remove_cmp (gh_list_t *gl, void *elem, $/;"	f
+gh_list_new	gh_list.c	/^gh_list_t* gh_list_new (int32_t size, func cb_free)$/;"	f
+gh_list_onlycopy_ptr	gh_list.c	/^void* gh_list_onlycopy_ptr (void *s, void *mt)$/;"	f
+gh_list_p	gh_list.h	/^} gh_list_t, *gh_list_p;$/;"	t	typeref:struct:gh_list_s
+gh_list_remove	gh_list.c	/^void* gh_list_remove (gh_list_t *gl, void *elem)$/;"	f
+gh_list_remove_cmp	gh_list.c	/^void* gh_list_remove_cmp (gh_list_t *gl, void *elem, $/;"	f
+gh_list_remove_index	gh_list.c	/^void* gh_list_remove_index(gh_list_t *gl, int32_t idx)$/;"	f
+gh_list_s	gh_list.h	/^typedef struct gh_list_s {$/;"	s
+gh_list_sort	gh_list.c	/^int32_t gh_list_sort (gh_list_t *gl, $/;"	f
+gh_list_t	gh_list.h	/^} gh_list_t, *gh_list_p;$/;"	t	typeref:struct:gh_list_s
+gh_malloc	gh_list.h	/^static __inline void* gh_malloc(size_t size)$/;"	f
+gh_realloc	gh_list.h	/^static __inline void* gh_realloc(void *ptr, size_t size)$/;"	f
+gh_size	gh_list.h	/^	int32_t gh_size;$/;"	m	struct:gh_list_s
+int16_t	gh_list.h	/^typedef  short          int16_t; $/;"	t
+int32_t	gh_list.h	/^typedef  int            int32_t; $/;"	t
+int8_t	gh_list.h	/^typedef  signed char       int8_t;   $/;"	t
+likely	gh_list.h	19;"	d
+logerr	gh_list.h	28;"	d
+main	gh_list.c	/^int main(int argc, char **argv)$/;"	f
+st	gh_list.c	/^struct st {$/;"	s	file:
+test_cmp	gh_list.c	/^int32_t test_cmp(void *_a, void *_b) {$/;"	f
+test_cmp2	gh_list.c	/^int32_t test_cmp2(const void *_a, const void *_b) {$/;"	f
+test_copy	gh_list.c	/^void* test_copy(void* s, void* match)$/;"	f
+test_free	gh_list.c	/^void test_free(void *ptr) {$/;"	f
+uint16_t	gh_list.h	/^typedef  unsigned short uint16_t; $/;"	t
+uint32_t	gh_list.h	/^typedef  unsigned int   uint32_t;$/;"	t
+uint8_t	gh_list.h	/^typedef  unsigned char  uint8_t;  $/;"	t
+unlikely	gh_list.h	22;"	d

@@ -10,10 +10,10 @@ BLOOM *bloom_create(size_t size, size_t nfuncs, ...)
 {
     BLOOM *bloom;
     va_list l;
-    int n;
+    size_t n;
     
-    if(!(bloom=malloc(sizeof(BLOOM)))) return NULL;
-    if(!(bloom->a=calloc((size+CHAR_BIT-1)/CHAR_BIT, sizeof(char)))) {
+    if(!(bloom = (BLOOM *)malloc(sizeof(BLOOM)))) return NULL;
+    if(!(bloom->a = (unsigned char *)calloc((size+CHAR_BIT-1) / CHAR_BIT, sizeof(char)))) {
         free(bloom);
         return NULL;
     }
@@ -24,7 +24,7 @@ BLOOM *bloom_create(size_t size, size_t nfuncs, ...)
     }
 
     va_start(l, nfuncs);
-    for(n=0; n<nfuncs; ++n) {
+    for(n = 0; n < nfuncs; ++ n) {
         bloom->funcs[n]=va_arg(l, hashfunc_t);
     }
     va_end(l);
@@ -48,7 +48,7 @@ int bloom_add(BLOOM *bloom, const char *s)
 {
     size_t n;
 
-    for(n=0; n<bloom->nfuncs; ++n) {
+    for(n = 0; n < bloom->nfuncs; ++ n) {
         SETBIT(bloom->a, bloom->funcs[n](s)%bloom->asize);
     }
 
@@ -59,9 +59,10 @@ int bloom_check(BLOOM *bloom, const char *s)
 {
     size_t n;
 
-    for(n=0; n<bloom->nfuncs; ++n) {
+    for(n = 0; n < bloom->nfuncs; ++ n) {
         if(!(GETBIT(bloom->a, bloom->funcs[n](s)%bloom->asize))) return 0;
     }
 
     return 1;
 }
+
