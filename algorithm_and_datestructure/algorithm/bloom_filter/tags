@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARRAY_SIZE	bloom_filter.h	14;"	d
+BIG_CONSTANT	bloom_filter.h	70;"	d
+BLOOM	bloom.h	/^} BLOOM;$/;"	t	typeref:struct:__anon1
+BL_CALLOC	bloom_filter.h	26;"	d
+BL_FREE	bloom_filter.h	27;"	d
+BYTE	bloom_filter.h	/^typedef unsigned char BYTE;$/;"	t
+CHAR	bloom_filter.h	/^typedef char CHAR;$/;"	t
+FORCE_INLINE	bloom_filter.h	60;"	d
+GETBIT	bloom.c	7;"	d	file:
+INT	bloom_filter.h	/^typedef int INT;$/;"	t
+INT64	bloom_filter.h	/^typedef long long INT64;$/;"	t
+MurmurHash3_x64_128	bloom_filter.h	/^static void MurmurHash3_x64_128 ( const void * key, const INT len,$/;"	f
+ROTL64	bloom_filter.h	68;"	d
+SALT_CONSTANT	bloom_filter.h	61;"	d
+SETBIT	bloom.c	6;"	d	file:
+SHORT	bloom_filter.h	/^typedef short SHORT;$/;"	t
+UINT	bloom_filter.h	/^typedef unsigned int UINT;$/;"	t
+UINT64	bloom_filter.h	/^typedef unsigned long long UINT64;$/;"	t
+USHORT	bloom_filter.h	/^typedef unsigned short USHORT;$/;"	t
+_ZXFW_BLOOM_FILTER_H_	bloom_filter.h	2;"	d
+__BLOOM_FILTER_H__	bloom.h	2;"	d
+__bloom_filter_search	bloom_filter.h	/^FORCE_INLINE INT __bloom_filter_search(zxfw_bloom_t *bf, UINT64 *hashes)$/;"	f
+__zxfw_bloom__	bloom_filter.h	/^typedef struct __zxfw_bloom__{$/;"	s
+a	bloom.h	/^	unsigned char *a;$/;"	m	struct:__anon1
+asize	bloom.h	/^	size_t asize;$/;"	m	struct:__anon1
+bitmap	bloom_filter.h	/^    BYTE bitmap[0];$/;"	m	struct:__zxfw_bloom__
+bitmap_getbit	bloom_filter.h	/^static inline INT bitmap_getbit(BYTE *bitmap, UINT64 idx)$/;"	f
+bitmap_setbit	bloom_filter.h	/^static inline void bitmap_setbit(BYTE *bitmap, UINT64 idx)$/;"	f
+bits_num	bloom_filter.h	/^    UINT64 bits_num; \/* number of bits in bitmap*\/$/;"	m	struct:__zxfw_bloom__
+bloom_add	bloom.c	/^int bloom_add(BLOOM *bloom, const char *s)$/;"	f
+bloom_check	bloom.c	/^int bloom_check(BLOOM *bloom, const char *s)$/;"	f
+bloom_create	bloom.c	/^BLOOM *bloom_create(size_t size, size_t nfuncs, ...)$/;"	f
+bloom_destroy	bloom.c	/^int bloom_destroy(BLOOM *bloom)$/;"	f
+capacity	bloom_filter.h	/^    UINT64 capacity;\/**\/$/;"	m	struct:__zxfw_bloom__
+counts_per_func	bloom_filter.h	/^    UINT64 counts_per_func;$/;"	m	struct:__zxfw_bloom__
+fmix64	bloom_filter.h	/^FORCE_INLINE UINT64 fmix64(UINT64 k)$/;"	f
+funcs	bloom.h	/^	hashfunc_t *funcs;$/;"	m	struct:__anon1
+getblock	bloom_filter.h	72;"	d
+hash_func	bloom_filter.h	/^static void hash_func(zxfw_bloom_t *bf, const CHAR *key, UINT len, UINT64 *hashes)$/;"	f
+hashes	bloom_filter.h	/^    UINT64 *hashes;$/;"	m	struct:__zxfw_bloom__
+hashfunc_t	bloom.h	/^typedef unsigned int (*hashfunc_t)(const char *);$/;"	t
+item_count	bloom_filter.h	/^    UINT64 item_count;$/;"	m	struct:__zxfw_bloom__
+k_num	bloom_filter.h	/^    UINT64 k_num; \/* number of hash functions*\/$/;"	m	struct:__zxfw_bloom__
+main	test.c	/^int main(int argc, char *argv[])$/;"	f
+nfuncs	bloom.h	/^	size_t nfuncs;$/;"	m	struct:__anon1
+rotl64	bloom_filter.h	/^FORCE_INLINE UINT64 rotl64 (UINT64 x, CHAR r)$/;"	f
+sax_hash	test.c	/^unsigned int sax_hash(const char *key)$/;"	f
+sdbm_hash	test.c	/^unsigned int sdbm_hash(const char *key)$/;"	f
+use_bytes	bloom_filter.h	/^    UINT64 use_bytes;$/;"	m	struct:__zxfw_bloom__
+zxfw_bloom_filter_add	bloom_filter.h	/^FORCE_INLINE INT zxfw_bloom_filter_add(zxfw_bloom_t *bf, const CHAR *str, UINT len)$/;"	f
+zxfw_bloom_filter_destroy	bloom_filter.h	/^FORCE_INLINE void zxfw_bloom_filter_destroy(zxfw_bloom_t *bf)$/;"	f
+zxfw_bloom_filter_load	bloom_filter.h	/^FORCE_INLINE zxfw_bloom_t *zxfw_bloom_filter_load(const CHAR *filename)$/;"	f
+zxfw_bloom_filter_new	bloom_filter.h	/^FORCE_INLINE zxfw_bloom_t *zxfw_bloom_filter_new(UINT64 capacity, double error_rate)$/;"	f
+zxfw_bloom_filter_reset	bloom_filter.h	/^FORCE_INLINE void zxfw_bloom_filter_reset(zxfw_bloom_t *bf)$/;"	f
+zxfw_bloom_filter_save	bloom_filter.h	/^FORCE_INLINE INT zxfw_bloom_filter_save(zxfw_bloom_t *bf, const CHAR *filename)$/;"	f
+zxfw_bloom_filter_search	bloom_filter.h	/^FORCE_INLINE INT zxfw_bloom_filter_search(zxfw_bloom_t *bf, const CHAR *key, UINT key_len)$/;"	f
+zxfw_bloom_t	bloom_filter.h	/^} zxfw_bloom_t;$/;"	t	typeref:struct:__zxfw_bloom__
