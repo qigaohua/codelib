@@ -1,7 +1,6 @@
-
-
-
-
+#define swap(a, b) (a ^= b, b ^= a, a ^= b)
+#define likely(x)       __builtin_expect(!!(x), 1)
+#define unlikely(x)     __builtin_expect(!!(x), 0)
 
 /*根据key从文件fname中找出对应值
  *如：char * mysql_user = conf_get_by_key(ISMS_CONF_IRCS, "isms_mysql_user");

@@ -1,8 +1,13 @@
 #ifndef __COMMON_H
 #define __COMMON_H
 
-#define swap(a, b) (a ^= b, b ^= a, a ^= b)
-#define likely(x)       __builtin_expect(!!(x), 1)
-#define unlikely(x)     __builtin_expect(!!(x), 0)
+/**************************************************
+ *1.交换函数 swap()
+ *2.likely() unlikely()
+ *3.根据key从文件fname中找出对应值
+ *4.防止进程多次运行
+ *5.设置后台进程
+ *6....
+ * *************************************************/
 
 #endif

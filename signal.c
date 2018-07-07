@@ -1,7 +1,10 @@
+#include <stdlib.h>
 #include <execinfo.h>
 #include <signal.h>
 #include <stdio.h>
+#include <inttypes.h>
 #include <string.h>
+#include <syslog.h>
 #include <sys/stat.h>
 #include <sys/syscall.h>
 
@@ -22,7 +25,7 @@ static void sigsegv_handler(int signal)
     for (i = 0; i < size; i++) {
         syslog(LOG_ERR, "%s\n", strings[i]);
     }    
-    ISMS_FREE (strings);
+    free(strings);
     exit(1);
 }
 
