@@ -4,11 +4,14 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+CHECK_FMT	log.h	13;"	d
 GH_LOG_DEBUG	log.h	8;"	d
 GH_LOG_ERROR	log.h	5;"	d
 GH_LOG_MSG	log.h	7;"	d
 GH_LOG_WARN	log.h	6;"	d
 KEEP_LINE	log.h	11;"	d
+LOGG_INFO	log.c	21;"	d	file:
+LOG_ERROR	log.c	15;"	d	file:
 MAX_LINE	log.h	10;"	d
 System	log.c	/^int System(char *cmd)$/;"	f
 __LOG_H__	log.h	2;"	d

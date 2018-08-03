@@ -7,8 +7,11 @@
 #include <string.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <syslog.h>
 
 #include "log.h"
+
+
 
 log_print_func log_print_cb = NULL;
 log_exit_func  log_exit_cb = NULL;
@@ -121,9 +124,9 @@ static void log_print_of_severity(int severity, const char *msg, FILE* fp)
                 severity_str = "???";
         }
         if (!fp) 
-            fprintf(stderr, "[%s] %s\n", severity_str, msg);
+            fprintf(stderr, "<%s> %s\n", severity_str, msg);
         else
-            fprintf(fp, "[%s] %s\n", severity_str, msg);
+            fprintf(fp, "<%s> %s\n", severity_str, msg);
     }
 }
 
@@ -248,6 +251,9 @@ int main()
     log_warn("warn_test");
     log_xwarn("xwarn_test");
     log_recold_file(GH_LOG_MSG, "log.txt", "%s", "recode file test");
+
+    LOGG_INFO("log_info test");
+    LOG_ERROR("log_error test");
 
     log_xerror(1, "xerror test");
     
