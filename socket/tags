@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+IN_CLASSA	socket.h	8;"	d
+IN_CLASSA_NET	socket.h	9;"	d
+IN_CLASSB	socket.h	10;"	d
+IN_CLASSB_NET	socket.h	11;"	d
+IN_CLASSC	socket.h	12;"	d
+IN_CLASSC_NET	socket.h	13;"	d
+NET_ERROR_INFO	socket.h	22;"	d
+NET_ERROR_INFO_EXIT	socket.h	15;"	d
+NET_INFO	socket.h	/^typedef struct net_info NET_INFO, net_info_p;$/;"	t	typeref:struct:net_info
+NET_LOGG_INFO	socket.h	29;"	d
+Recv	socket.c	/^ssize_t Recv(int fd, void *buf, size_t num)$/;"	f
+SERVER	socket.c	16;"	d	file:
+Send	socket.c	/^ssize_t Send(int fd, void *buf, size_t num)$/;"	f
+__SOCKET__	socket.h	2;"	d
+check_param	socket.h	35;"	d
+get_mac_by_name	socket.c	/^static inline int get_mac_by_name(const char *device, unsigned char *buf)$/;"	f	file:
+ip_get_mask	socket.c	/^unsigned long ip_get_mask(unsigned long addr)$/;"	f
+net_host	socket.h	/^    char net_host[128];$/;"	m	struct:net_info
+net_info	socket.h	/^struct net_info {$/;"	s
+net_info_p	socket.h	/^typedef struct net_info NET_INFO, net_info_p;$/;"	t	typeref:struct:
+net_port	socket.h	/^    uint16_t net_port;$/;"	m	struct:net_info
+str_is_ip	socket.c	/^static inline int str_is_ip(const char *str, int str_len)$/;"	f	file:
+tcpSocket	socket.c	/^int tcpSocket(const char *host, int port)$/;"	f

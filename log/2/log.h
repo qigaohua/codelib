@@ -21,6 +21,9 @@ void log_warn(const char *fmt, ...) CHECK_FMT(1,2);
 void log_xwarn(const char *fmt, ...) CHECK_FMT(1,2);
 void log_xmsg(const char *fmt, ...) CHECK_FMT(1,2);
 void log_recold_file(int severity, const char *file, const char *fmt, ...) CHECK_FMT(3, 4);
+void log_set_print_cb(log_print_func cb);
+void log_set_exit_cb(log_exit_func cb);
+
 
 void log_debug(const char *fmt, ...);
 
