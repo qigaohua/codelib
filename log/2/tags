@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+GH_LOG_DEBUG	log.h	8;"	d
+GH_LOG_ERROR	log.h	5;"	d
+GH_LOG_MSG	log.h	7;"	d
+GH_LOG_WARN	log.h	6;"	d
+KEEP_LINE	log.h	11;"	d
+MAX_LINE	log.h	10;"	d
+System	log.c	/^int System(char *cmd)$/;"	f
+__LOG_H__	log.h	2;"	d
+get_file_lines	log.c	/^int get_file_lines(const char *file)$/;"	f
+log_debug	log.c	/^void log_debug(const char *fmt, ...)$/;"	f
+log_error	log.c	/^void log_error(int errcode, const char *fmt, ...)$/;"	f
+log_exit	log.c	/^static void log_exit(int errcode)$/;"	f	file:
+log_exit_cb	log.c	/^log_exit_func  log_exit_cb = NULL;$/;"	v
+log_exit_func	log.h	/^typedef void (*log_exit_func)(int);$/;"	t
+log_print	log.c	/^static void log_print(int severity, const char *fmt,  const char *errstr, va_list ap, FILE* fp)$/;"	f	file:
+log_print_cb	log.c	/^log_print_func log_print_cb = NULL;$/;"	v
+log_print_func	log.h	/^typedef void (*log_print_func)(int, const char*);$/;"	t
+log_print_of_severity	log.c	/^static void log_print_of_severity(int severity, const char *msg, FILE* fp)$/;"	f	file:
+log_recold_file	log.c	/^void log_recold_file(int severity, const char *file, const char *fmt, ...)$/;"	f
+log_set_exit_cb	log.c	/^void log_set_exit_cb(log_exit_func cb)$/;"	f
+log_set_print_cb	log.c	/^void log_set_print_cb(log_print_func cb)$/;"	f
+log_warn	log.c	/^void log_warn(const char *fmt, ...)$/;"	f
+log_xerror	log.c	/^void log_xerror(int errcode, const char *fmt, ...)$/;"	f
+log_xmsg	log.c	/^void log_xmsg(const char *fmt, ...)$/;"	f
+log_xwarn	log.c	/^void log_xwarn(const char *fmt, ...)$/;"	f
+main	log.c	/^int main()$/;"	f
+truncate_file	log.c	/^int truncate_file(const char *file, int truncate_line)$/;"	f
