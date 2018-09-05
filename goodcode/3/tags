@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MCACHE_ENTRY_MASK	monitor_cache.h	15;"	d
+MCACHE_ENTRY_SIZE	monitor_cache.h	14;"	d
+__JFIND_MONITOR_CACHE_H__	monitor_cache.h	2;"	d
+add_monitor_cache	monitor_cache.c	/^int add_monitor_cache(struct jmonitor_cache* jmt, void* data)$/;"	f
+cache	monitor_cache.h	/^	struct jcache *cache;$/;"	m	struct:jentry	typeref:struct:jentry::jcache
+cache_cmp	monitor_cache.h	/^	int (*cache_cmp)(void*, void*);$/;"	m	struct:jmonitor_cache
+cache_copy	monitor_cache.h	/^	int (*cache_copy)(void *, void *);$/;"	m	struct:jmonitor_cache
+cache_dup	monitor_cache.h	/^	void* (*cache_dup)(void*);$/;"	m	struct:jmonitor_cache
+cache_free	monitor_cache.h	/^	void (*cache_free)(void*);$/;"	m	struct:jmonitor_cache
+cache_print	monitor_cache.h	/^	void (*cache_print)(void*);$/;"	m	struct:jmonitor_cache
+data	monitor_cache.h	/^	void* data;$/;"	m	struct:jcache
+free_monitor_cache	monitor_cache.c	/^void free_monitor_cache(struct jmonitor_cache* jmt)$/;"	f
+hashcode	monitor_cache.h	/^	int (*hashcode)(void*);$/;"	m	struct:jmonitor_cache
+init_monitor_cache	monitor_cache.c	/^struct jmonitor_cache* init_monitor_cache()$/;"	f
+jcache	monitor_cache.h	/^struct jcache {$/;"	s
+jentry	monitor_cache.h	/^struct jentry {$/;"	s
+jmonitor_cache	monitor_cache.h	/^struct jmonitor_cache {$/;"	s
+monitor	monitor_cache.h	/^	struct jentry monitor[MCACHE_ENTRY_SIZE];$/;"	m	struct:jmonitor_cache	typeref:struct:jmonitor_cache::jentry
+mutex	monitor_cache.h	/^	pthread_mutex_t mutex;$/;"	m	struct:jentry
+next	monitor_cache.h	/^	struct jcache* next;$/;"	m	struct:jcache	typeref:struct:jcache::jcache
+show_monitor_cache	monitor_cache.c	/^void show_monitor_cache(struct jmonitor_cache* jmt)$/;"	f
