@@ -63,28 +63,28 @@ static inline void list_insert_tail(struct list_head *head, struct list_head *i)
 
 
 #define list_head(h)       \
-	(h)->next
+    (h)->next
 
 #define list_last(h)      \
-	(h)->prev
+    (h)->prev
 
 #define list_next(q)      \
-	(q)->next
+    (q)->next
 
 #define list_prev(q)        \
-	(q)->prev
+    (q)->prev
 
 #define list_remove(r)     \
-	r->prev->next = r->next; \
-	r->next->prev = r->prev 
+    r->prev->next = r->next; \
+    r->next->prev = r->prev 
 
 #define list_split(h, q, n)                                              \
-   (n)->prev = (h)->prev;                                                    \
-   (n)->prev->next = n;                                                      \
-   (n)->next = q;                                                            \
-   (h)->prev = (q)->prev;                                                    \
-   (h)->prev->next = h;                                                      \
-   (q)->prev = n;
+    (n)->prev = (h)->prev;                                                    \
+    (n)->prev->next = n;                                                      \
+    (n)->next = q;                                                            \
+    (h)->prev = (q)->prev;                                                    \
+    (h)->prev->next = h;                                                      \
+    (q)->prev = n;
 
 
  #define list_add(h, n)                                                   \

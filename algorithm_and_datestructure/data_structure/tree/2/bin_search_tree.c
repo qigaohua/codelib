@@ -107,14 +107,11 @@ int bst_for_delete(bst_p *root, value_type data)
 
 	if (p->data == data) {
 		if ((NULL == p->lchild) && (NULL == p->rchild)) {
-			free(p);
 			*root = NULL;
 		} else if ((NULL != p->lchild) && (NULL == p->rchild)) {
 			*root = p->lchild;
-			free(p);
 		} else if ((NULL == p->lchild) && (NULL != p->rchild)) {
 			*root = p->rchild;
-			free(p);
 		} else {
 			s = p->rchild;
 			if (NULL == s->lchild)
@@ -128,11 +125,11 @@ int bst_for_delete(bst_p *root, value_type data)
 				s->lchild = p->lchild;
 				s->rchild = p->rchild;
 			}
-			*root = s;
-			free(p);
-		}
+            *root = s;
+        }
+        free(p);
 
-	} else if (p->data > data) {
+    } else if (p->data > data) {
 		bst_for_delete(&(p->lchild), data);
 	} else {
 		bst_for_delete(&(p->rchild), data);

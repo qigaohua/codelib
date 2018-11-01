@@ -6,7 +6,7 @@ typedef unsigned int value_type;
 typedef struct _bin_search_tree {
 	value_type data;
 	struct _bin_search_tree *lchild, *rchild;
-}bst_t, *bst_p;
+} bst_t, *bst_p;
 
 
 
