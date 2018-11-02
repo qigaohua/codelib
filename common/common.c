@@ -146,3 +146,39 @@ static void daemon_init() {
 }
 #endif
 
+/*获取任意长度的随机字符串*/
+char* genRandomString(int length)  
+{
+    int flag, i;  
+    char* string;  
+    srand((unsigned) time(NULL ));  
+    if ((string = (char*) malloc(length + 1)) == NULL )  
+    {
+        LOGERR("Malloc failed\n");  
+        return NULL ;  
+    }  
+
+    for (i = 0; i < length; i++)  
+    {
+        flag = rand() % 3;  
+        switch (flag)  
+        {
+            case 0:  
+                string[i] = 'A' + rand() % 26;  
+                break;  
+            case 1:  
+                string[i] = 'a' + rand() % 26;  
+                break;  
+            case 2:  
+                string[i] = '0' + rand() % 10;  
+                break;  
+            default:  
+                string[i] = 'x';  
+                break;  
+        }  
+
+    }  
+    string[length] = '\0';  
+    LOGINFO("random : %s", string);
+    return string;  
+}
