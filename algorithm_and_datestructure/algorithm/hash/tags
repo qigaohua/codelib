@@ -1,0 +1,720 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOW_UNALIGNED_READS	smhasher/src/Spooky.cpp	11;"	d	file:
+AVALANCHE_FAIL	smhasher/src/AvalancheTest.h	21;"	d
+Add	MurmurHash2.cpp	/^  void Add ( const unsigned char * data, int len )$/;"	f	class:CMurmurHash2A
+AppendedZeroesTest	smhasher/src/KeysetTest.cpp	/^void AppendedZeroesTest ( pfHash hash, const int hashbits )$/;"	f
+AvalancheTest	smhasher/src/AvalancheTest.h	/^bool AvalancheTest ( pfHash hash, const int reps )$/;"	f
+BIG_CONSTANT	MurmurHash2.cpp	25;"	d	file:
+BIG_CONSTANT	MurmurHash2.cpp	31;"	d	file:
+BIG_CONSTANT	MurmurHash3.c	50;"	d	file:
+BIG_CONSTANT	smhasher/src/Platform.h	30;"	d
+BIG_CONSTANT	smhasher/src/Platform.h	71;"	d
+BadHash	smhasher/src/Hashes.cpp	/^void BadHash ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+Begin	MurmurHash2.cpp	/^  void Begin ( uint32_t seed = 0 )$/;"	f	class:CMurmurHash2A
+Bernstein	smhasher/src/Hashes.cpp	/^void Bernstein ( const void * key, int len, uint32_t seed, void * out ) $/;"	f
+BicTest	smhasher/src/AvalancheTest.h	/^bool BicTest ( pfHash hash, const int reps )$/;"	f
+BicTest	smhasher/src/AvalancheTest.h	/^void BicTest ( pfHash hash, const int keybit, const int reps, double & maxBias, int & maxA, int & maxB, bool verbose )$/;"	f
+BicTest2	smhasher/src/AvalancheTest.h	/^void BicTest2 ( pfHash hash, const int reps, bool verbose = true )$/;"	f
+BicTest3	smhasher/src/AvalancheTest.h	/^void BicTest3 ( pfHash hash, const int reps, bool verbose = true )$/;"	f
+Bitslice	smhasher/src/Bitslice.cpp	/^void Bitslice ( std::vector<hashtype> & hashes, slice_vec & slices )$/;"	f
+Blob	smhasher/src/Types.h	/^  Blob ( const Blob & k )$/;"	f	class:Blob
+Blob	smhasher/src/Types.h	/^  Blob ( int x )$/;"	f	class:Blob
+Blob	smhasher/src/Types.h	/^  Blob ( uint64_t a, uint64_t b )$/;"	f	class:Blob
+Blob	smhasher/src/Types.h	/^  Blob()$/;"	f	class:Blob
+Blob	smhasher/src/Types.h	/^class Blob$/;"	c
+BulkSpeedTest	smhasher/src/SpeedTest.cpp	/^void BulkSpeedTest ( pfHash hash, uint32_t seed )$/;"	f
+ByteVec	smhasher/src/Types.h	/^  ByteVec ( const void * key, int len )$/;"	f	struct:ByteVec
+ByteVec	smhasher/src/Types.h	/^struct ByteVec : public std::vector<uint8_t>$/;"	s
+C1	smhasher/src/PMurHash.c	145;"	d	file:
+C2	smhasher/src/PMurHash.c	146;"	d	file:
+CHUNK	smhasher/src/City.cpp	376;"	d	file:
+CITY_HASH_H_	smhasher/src/City.h	44;"	d
+CMurmurHash2A	MurmurHash2.cpp	/^class CMurmurHash2A$/;"	c	file:
+CalcMean	smhasher/src/SpeedTest.cpp	/^double CalcMean ( std::vector<double> & v )$/;"	f
+CalcMean	smhasher/src/SpeedTest.cpp	/^double CalcMean ( std::vector<double> & v, int a, int b )$/;"	f
+CalcStdv	smhasher/src/SpeedTest.cpp	/^double CalcStdv ( std::vector<double> & v, int a, int b )$/;"	f
+CityHash128	smhasher/src/City.cpp	/^uint128 CityHash128(const char *s, size_t len) {$/;"	f
+CityHash128WithSeed	smhasher/src/City.cpp	/^uint128 CityHash128WithSeed(const char *s, size_t len, uint128 seed) {$/;"	f
+CityHash128_test	smhasher/src/CityTest.cpp	/^void CityHash128_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+CityHash64	smhasher/src/City.cpp	/^uint64 CityHash64(const char *s, size_t len) {$/;"	f
+CityHash64WithSeed	smhasher/src/City.cpp	/^uint64 CityHash64WithSeed(const char *s, size_t len, uint64 seed) {$/;"	f
+CityHash64WithSeeds	smhasher/src/City.cpp	/^uint64 CityHash64WithSeeds(const char *s, size_t len,$/;"	f
+CityHash64_test	smhasher/src/CityTest.cpp	/^void CityHash64_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+CityHashCrc128	smhasher/src/City.cpp	/^uint128 CityHashCrc128(const char *s, size_t len) {$/;"	f
+CityHashCrc128WithSeed	smhasher/src/City.cpp	/^uint128 CityHashCrc128WithSeed(const char *s, size_t len, uint128 seed) {$/;"	f
+CityHashCrc256	smhasher/src/City.cpp	/^void CityHashCrc256(const char *s, size_t len, uint64 *result) {$/;"	f
+CityHashCrc256Long	smhasher/src/City.cpp	/^static void CityHashCrc256Long(const char *s, size_t len,$/;"	f	file:
+CityHashCrc256Short	smhasher/src/City.cpp	/^static void CityHashCrc256Short(const char *s, size_t len, uint64 *result) {$/;"	f	file:
+CityMurmur	smhasher/src/City.cpp	/^static uint128 CityMurmur(const char *s, size_t len, uint128 seed) {$/;"	f	file:
+CollisionCallback	smhasher/src/Types.h	/^  CollisionCallback ( pfHash hash, hashset & collisions, collmap & cmap ) $/;"	f	struct:CollisionCallback
+CollisionCallback	smhasher/src/Types.h	/^struct CollisionCallback : public KeyCallback$/;"	s
+CollisionMap	smhasher/src/Types.h	/^struct CollisionMap : public std::map< hashtype, std::vector<keytype> >$/;"	s
+CombinationKeyTest	smhasher/src/KeysetTest.h	/^bool CombinationKeyTest ( hashfunc<hashtype> hash, int maxlen, uint32_t * blocks, int blockcount, bool testColl, bool testDist, bool drawDiagram )$/;"	f
+CombinationKeygenRecurse	smhasher/src/KeysetTest.h	/^void CombinationKeygenRecurse ( uint32_t * key, int len, int maxlen, $/;"	f
+ContainsOutlier	smhasher/src/SpeedTest.cpp	/^bool ContainsOutlier ( std::vector<double> & v, size_t len )$/;"	f
+Crap8	smhasher/src/Hashes.cpp	/^uint32_t Crap8( const uint8_t *key, uint32_t len, uint32_t seed ) {$/;"	f
+Crap8_test	smhasher/src/Hashes.cpp	/^void Crap8_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+CyclicKeyTest	smhasher/src/KeysetTest.h	/^bool CyclicKeyTest ( pfHash hash, int cycleLen, int cycleReps, const int keycount, bool drawDiagram )$/;"	f
+DECL	smhasher/src/pstdint.h	751;"	d
+DECLI	smhasher/src/pstdint.h	749;"	d
+DECLU	smhasher/src/pstdint.h	748;"	d
+DO1	smhasher/src/crc.cpp	74;"	d	file:
+DO2	smhasher/src/crc.cpp	75;"	d	file:
+DO4	smhasher/src/crc.cpp	76;"	d	file:
+DO8	smhasher/src/crc.cpp	77;"	d	file:
+DOBLOCK	smhasher/src/PMurHash.c	150;"	d	file:
+DOBYTES	smhasher/src/PMurHash.c	163;"	d	file:
+DiffDistTest	smhasher/src/DifferentialTest.h	/^void DiffDistTest ( pfHash hash, const int diffbits, int trials, double & worst, double & avg )$/;"	f
+DiffDistTest2	smhasher/src/DifferentialTest.h	/^bool DiffDistTest2 ( pfHash hash  )$/;"	f
+DiffTest	smhasher/src/DifferentialTest.h	/^bool DiffTest ( pfHash hash, int diffbits, int reps, bool dumpCollisions )$/;"	f
+DiffTestRecurse	smhasher/src/DifferentialTest.h	/^void DiffTestRecurse ( pfHash hash, keytype & k1, keytype & k2, hashtype & h1, hashtype & h2, int start, int bitsleft, std::vector<keytype> & diffs )$/;"	f
+DoNothingHash	smhasher/src/Hashes.cpp	/^void DoNothingHash ( const void *, int, uint32_t, void * )$/;"	f
+DumpCollisionMap	smhasher/src/KeysetTest.cpp	/^void DumpCollisionMap ( CollisionMap<hashtype,ByteVec> & cmap )$/;"	f
+End	MurmurHash2.cpp	/^  uint32_t End ( void )$/;"	f	class:CMurmurHash2A
+End	smhasher/src/Spooky.h	/^    static INLINE void End($/;"	f	class:SpookyHash
+EndPartial	smhasher/src/Spooky.h	/^    static INLINE void EndPartial($/;"	f	class:SpookyHash
+ExpectedCollisions	smhasher/src/Stats.h	/^inline double ExpectedCollisions ( double balls, double bins )$/;"	f
+F	smhasher/src/md5.cpp	180;"	d	file:
+F	smhasher/src/md5.cpp	199;"	d	file:
+F	smhasher/src/md5.cpp	201;"	d	file:
+F	smhasher/src/md5.cpp	220;"	d	file:
+F	smhasher/src/md5.cpp	222;"	d	file:
+F	smhasher/src/md5.cpp	241;"	d	file:
+F	smhasher/src/md5.cpp	243;"	d	file:
+F	smhasher/src/md5.cpp	262;"	d	file:
+FNV	smhasher/src/Hashes.cpp	/^void FNV ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+FORCE_INLINE	MurmurHash3.c	35;"	d	file:
+FORCE_INLINE	smhasher/src/Platform.h	13;"	d
+FORCE_INLINE	smhasher/src/Platform.h	43;"	d
+FactorSlices	smhasher/src/Bitslice.cpp	/^void FactorSlices ( slice_vec & slices )$/;"	f
+Fetch32	smhasher/src/City.cpp	/^static uint32 Fetch32(const char *p) {$/;"	f	file:
+Fetch64	smhasher/src/City.cpp	/^static uint64 Fetch64(const char *p) {$/;"	f	file:
+FilterOutliers	smhasher/src/SpeedTest.cpp	/^void FilterOutliers ( std::vector<double> & v )$/;"	f
+FilterOutliers2	smhasher/src/SpeedTest.cpp	/^void FilterOutliers2 ( std::vector<double> & v )$/;"	f
+Final	smhasher/src/Spooky.cpp	/^void SpookyHash::Final(uint64 *hash1, uint64 *hash2)$/;"	f	class:SpookyHash
+FindCollisions	smhasher/src/Stats.h	/^int FindCollisions ( std::vector<hashtype> & hashes, $/;"	f
+GET_ULONG_LE	smhasher/src/md5.cpp	114;"	d	file:
+GenerateMixingConstants	smhasher/src/Types.cpp	/^void GenerateMixingConstants ( void )$/;"	f
+Hash128	smhasher/src/Spooky.cpp	/^void SpookyHash::Hash128($/;"	f	class:SpookyHash
+Hash128to64	smhasher/src/City.h	/^inline uint64 Hash128to64(const uint128& x) {$/;"	f
+Hash32	smhasher/src/Spooky.h	/^    static uint32 Hash32($/;"	f	class:SpookyHash
+Hash64	smhasher/src/Spooky.h	/^    static uint64 Hash64($/;"	f	class:SpookyHash
+HashCallback	smhasher/src/Types.h	/^  HashCallback ( pfHash hash, hashvec & hashes ) : m_hashes(hashes), m_pfHash(hash)$/;"	f	struct:HashCallback
+HashCallback	smhasher/src/Types.h	/^struct HashCallback : public KeyCallback$/;"	s
+HashInfo	smhasher/src/main.cpp	/^struct HashInfo$/;"	s	file:
+HashLen0to16	smhasher/src/City.cpp	/^static uint64 HashLen0to16(const char *s, size_t len) {$/;"	f	file:
+HashLen16	smhasher/src/City.cpp	/^static uint64 HashLen16(uint64 u, uint64 v) {$/;"	f	file:
+HashLen17to32	smhasher/src/City.cpp	/^static uint64 HashLen17to32(const char *s, size_t len) {$/;"	f	file:
+HashLen33to64	smhasher/src/City.cpp	/^static uint64 HashLen33to64(const char *s, size_t len) {$/;"	f	file:
+HashSet	smhasher/src/Types.h	/^struct HashSet : public std::set<hashtype>$/;"	s
+INLINE	smhasher/src/Spooky.h	31;"	d
+INLINE	smhasher/src/Spooky.h	38;"	d
+INT16_C	smhasher/src/pstdint.h	258;"	d
+INT16_C	smhasher/src/pstdint.h	360;"	d
+INT16_C	smhasher/src/pstdint.h	366;"	d
+INT16_MAX	smhasher/src/pstdint.h	352;"	d
+INT16_MIN	smhasher/src/pstdint.h	355;"	d
+INT32_C	smhasher/src/pstdint.h	252;"	d
+INT32_C	smhasher/src/pstdint.h	415;"	d
+INT32_C	smhasher/src/pstdint.h	421;"	d
+INT32_C	smhasher/src/pstdint.h	427;"	d
+INT32_MAX	smhasher/src/pstdint.h	279;"	d
+INT32_MAX	smhasher/src/pstdint.h	405;"	d
+INT32_MIN	smhasher/src/pstdint.h	408;"	d
+INT64_C	smhasher/src/pstdint.h	246;"	d
+INT64_C	smhasher/src/pstdint.h	450;"	d
+INT64_C	smhasher/src/pstdint.h	463;"	d
+INT64_C	smhasher/src/pstdint.h	472;"	d
+INT64_C	smhasher/src/pstdint.h	481;"	d
+INT64_MAX	smhasher/src/pstdint.h	273;"	d
+INT64_MAX	smhasher/src/pstdint.h	496;"	d
+INT64_MIN	smhasher/src/pstdint.h	499;"	d
+INT8_C	smhasher/src/pstdint.h	264;"	d
+INT8_C	smhasher/src/pstdint.h	324;"	d
+INT8_MAX	smhasher/src/pstdint.h	316;"	d
+INT8_MIN	smhasher/src/pstdint.h	319;"	d
+INTMAX_C	smhasher/src/pstdint.h	548;"	d
+INTMAX_C	smhasher/src/pstdint.h	564;"	d
+INTMAX_MAX	smhasher/src/pstdint.h	282;"	d
+INTMAX_MAX	smhasher/src/pstdint.h	544;"	d
+INTMAX_MAX	smhasher/src/pstdint.h	561;"	d
+INTMAX_MIN	smhasher/src/pstdint.h	285;"	d
+INTMAX_MIN	smhasher/src/pstdint.h	545;"	d
+INTPTR_C	smhasher/src/pstdint.h	709;"	d
+INTPTR_MAX	smhasher/src/pstdint.h	703;"	d
+INTPTR_MIN	smhasher/src/pstdint.h	706;"	d
+INT_FAST16_MAX	smhasher/src/pstdint.h	632;"	d
+INT_FAST16_MIN	smhasher/src/pstdint.h	636;"	d
+INT_FAST32_MAX	smhasher/src/pstdint.h	634;"	d
+INT_FAST32_MIN	smhasher/src/pstdint.h	637;"	d
+INT_FAST64_MAX	smhasher/src/pstdint.h	642;"	d
+INT_FAST64_MIN	smhasher/src/pstdint.h	643;"	d
+INT_FAST8_MAX	smhasher/src/pstdint.h	630;"	d
+INT_FAST8_MIN	smhasher/src/pstdint.h	635;"	d
+INT_LEAST16_MAX	smhasher/src/pstdint.h	595;"	d
+INT_LEAST16_MIN	smhasher/src/pstdint.h	599;"	d
+INT_LEAST32_MAX	smhasher/src/pstdint.h	597;"	d
+INT_LEAST32_MIN	smhasher/src/pstdint.h	600;"	d
+INT_LEAST64_MAX	smhasher/src/pstdint.h	606;"	d
+INT_LEAST64_MIN	smhasher/src/pstdint.h	607;"	d
+INT_LEAST8_MAX	smhasher/src/pstdint.h	593;"	d
+INT_LEAST8_MIN	smhasher/src/pstdint.h	598;"	d
+Init	smhasher/src/Spooky.cpp	/^void SpookyHash::Init(uint64 seed1, uint64 seed2)$/;"	f	class:SpookyHash
+KeyCallback	smhasher/src/Types.h	/^  KeyCallback() : m_count(0)$/;"	f	struct:KeyCallback
+KeyCallback	smhasher/src/Types.h	/^struct KeyCallback$/;"	s
+LIKELY	smhasher/src/City.cpp	78;"	d	file:
+LIKELY	smhasher/src/City.cpp	80;"	d	file:
+LONG_LONG_MAX	smhasher/src/pstdint.h	489;"	d
+MH_UINT32	smhasher/src/PMurHash.h	19;"	d
+MH_UINT32	smhasher/src/PMurHash.h	26;"	d
+MH_UINT32	smhasher/src/PMurHash.h	33;"	d
+MH_UINT32	smhasher/src/PMurHash.h	35;"	d
+MH_UINT32	smhasher/src/PMurHash.h	37;"	d
+MH_UINT8	smhasher/src/PMurHash.h	46;"	d
+MIX	MurmurHash2.cpp	391;"	d	file:
+Mix	smhasher/src/Spooky.h	/^    static INLINE void Mix($/;"	f	class:SpookyHash
+MixTail	MurmurHash2.cpp	/^  void MixTail ( const unsigned char * & data, int & len )$/;"	f	class:CMurmurHash2A	file:
+MixVCode	smhasher/src/Types.cpp	/^void MixVCode ( const void * blob, int len )$/;"	f
+MurmurHash1	MurmurHash1.cpp	/^uint32_t MurmurHash1 ( const void * key, int len, uint32_t seed )$/;"	f
+MurmurHash1Aligned	MurmurHash1.cpp	/^unsigned int MurmurHash1Aligned ( const void * key, int len, unsigned int seed )$/;"	f
+MurmurHash1_test	smhasher/src/Hashes.h	/^inline void MurmurHash1_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+MurmurHash2	MurmurHash2.cpp	/^uint32_t MurmurHash2 ( const void * key, int len, uint32_t seed )$/;"	f
+MurmurHash2A	MurmurHash2.cpp	/^uint32_t MurmurHash2A ( const void * key, int len, uint32_t seed )$/;"	f
+MurmurHash2A_test	smhasher/src/Hashes.h	/^inline void MurmurHash2A_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+MurmurHash2_test	smhasher/src/Hashes.h	/^inline void MurmurHash2_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+MurmurHash3_x64_128	MurmurHash3.c	/^void MurmurHash3_x64_128 ( const void * key, const int len,$/;"	f
+MurmurHash3_x86_128	MurmurHash3.c	/^void MurmurHash3_x86_128 ( const void * key, const int len,$/;"	f
+MurmurHash3_x86_32	MurmurHash3.c	/^void MurmurHash3_x86_32 ( const void * key, int len,$/;"	f
+MurmurHash64A	MurmurHash2.cpp	/^uint64_t MurmurHash64A ( const void * key, int len, uint64_t seed )$/;"	f
+MurmurHash64A_test	smhasher/src/Hashes.h	/^inline void MurmurHash64A_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+MurmurHash64B	MurmurHash2.cpp	/^uint64_t MurmurHash64B ( const void * key, int len, uint64_t seed )$/;"	f
+MurmurHash64B_test	smhasher/src/Hashes.h	/^inline void MurmurHash64B_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+MurmurHashAligned2	MurmurHash2.cpp	/^uint32_t MurmurHashAligned2 ( const void * key, int len, uint32_t seed )$/;"	f
+MurmurHashNeutral2	MurmurHash2.cpp	/^uint32_t MurmurHashNeutral2 ( const void * key, int len, uint32_t seed )$/;"	f
+MurmurOAAT	smhasher/src/Hashes.cpp	/^uint32_t MurmurOAAT ( const void * key, int len, uint32_t seed )$/;"	f
+MurmurOAAT_test	smhasher/src/Hashes.cpp	/^void MurmurOAAT_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+NEVER_INLINE	smhasher/src/Platform.h	14;"	d
+NEVER_INLINE	smhasher/src/Platform.h	44;"	d
+P	smhasher/src/md5.cpp	170;"	d	file:
+PMurHash32	smhasher/src/PMurHash.c	/^uint32_t PMurHash32(uint32_t seed, const void *key, int len)$/;"	f
+PMurHash32_Process	smhasher/src/PMurHash.c	/^void PMurHash32_Process(uint32_t *ph1, uint32_t *pcarry, const void *key, int len)$/;"	f
+PMurHash32_Result	smhasher/src/PMurHash.c	/^uint32_t PMurHash32_Result(uint32_t h, uint32_t carry, uint32_t total_length)$/;"	f
+PMurHash32_test	smhasher/src/PMurHash.c	/^void PMurHash32_test(const void *key, int len, uint32_t seed, void *out)$/;"	f
+PRINTF_INT16_DEC_WIDTH	smhasher/src/pstdint.h	227;"	d
+PRINTF_INT16_DEC_WIDTH	smhasher/src/pstdint.h	529;"	d
+PRINTF_INT16_HEX_WIDTH	smhasher/src/pstdint.h	215;"	d
+PRINTF_INT16_HEX_WIDTH	smhasher/src/pstdint.h	516;"	d
+PRINTF_INT16_MODIFIER	smhasher/src/pstdint.h	203;"	d
+PRINTF_INT16_MODIFIER	smhasher/src/pstdint.h	337;"	d
+PRINTF_INT16_MODIFIER	smhasher/src/pstdint.h	344;"	d
+PRINTF_INT16_MODIFIER	smhasher/src/pstdint.h	362;"	d
+PRINTF_INT16_MODIFIER	smhasher/src/pstdint.h	368;"	d
+PRINTF_INT32_DEC_WIDTH	smhasher/src/pstdint.h	224;"	d
+PRINTF_INT32_DEC_WIDTH	smhasher/src/pstdint.h	526;"	d
+PRINTF_INT32_HEX_WIDTH	smhasher/src/pstdint.h	212;"	d
+PRINTF_INT32_HEX_WIDTH	smhasher/src/pstdint.h	513;"	d
+PRINTF_INT32_MODIFIER	smhasher/src/pstdint.h	200;"	d
+PRINTF_INT32_MODIFIER	smhasher/src/pstdint.h	384;"	d
+PRINTF_INT32_MODIFIER	smhasher/src/pstdint.h	391;"	d
+PRINTF_INT32_MODIFIER	smhasher/src/pstdint.h	397;"	d
+PRINTF_INT32_MODIFIER	smhasher/src/pstdint.h	417;"	d
+PRINTF_INT32_MODIFIER	smhasher/src/pstdint.h	423;"	d
+PRINTF_INT32_MODIFIER	smhasher/src/pstdint.h	429;"	d
+PRINTF_INT64_DEC_WIDTH	smhasher/src/pstdint.h	221;"	d
+PRINTF_INT64_DEC_WIDTH	smhasher/src/pstdint.h	523;"	d
+PRINTF_INT64_HEX_WIDTH	smhasher/src/pstdint.h	209;"	d
+PRINTF_INT64_HEX_WIDTH	smhasher/src/pstdint.h	510;"	d
+PRINTF_INT64_MODIFIER	smhasher/src/pstdint.h	197;"	d
+PRINTF_INT64_MODIFIER	smhasher/src/pstdint.h	452;"	d
+PRINTF_INT64_MODIFIER	smhasher/src/pstdint.h	465;"	d
+PRINTF_INT64_MODIFIER	smhasher/src/pstdint.h	474;"	d
+PRINTF_INT64_MODIFIER	smhasher/src/pstdint.h	483;"	d
+PRINTF_INT8_DEC_WIDTH	smhasher/src/pstdint.h	230;"	d
+PRINTF_INT8_DEC_WIDTH	smhasher/src/pstdint.h	532;"	d
+PRINTF_INT8_HEX_WIDTH	smhasher/src/pstdint.h	218;"	d
+PRINTF_INT8_HEX_WIDTH	smhasher/src/pstdint.h	519;"	d
+PRINTF_INTMAX_DEC_WIDTH	smhasher/src/pstdint.h	236;"	d
+PRINTF_INTMAX_DEC_WIDTH	smhasher/src/pstdint.h	556;"	d
+PRINTF_INTMAX_DEC_WIDTH	smhasher/src/pstdint.h	572;"	d
+PRINTF_INTMAX_HEX_WIDTH	smhasher/src/pstdint.h	233;"	d
+PRINTF_INTMAX_HEX_WIDTH	smhasher/src/pstdint.h	553;"	d
+PRINTF_INTMAX_HEX_WIDTH	smhasher/src/pstdint.h	569;"	d
+PRINTF_INTMAX_MODIFIER	smhasher/src/pstdint.h	206;"	d
+PRINTF_INTMAX_MODIFIER	smhasher/src/pstdint.h	550;"	d
+PRINTF_INTMAX_MODIFIER	smhasher/src/pstdint.h	566;"	d
+PRINTF_INTPTR_MODIFIER	smhasher/src/pstdint.h	691;"	d
+PRINTF_LEAST16_MODIFIER	smhasher/src/pstdint.h	591;"	d
+PRINTF_LEAST32_MODIFIER	smhasher/src/pstdint.h	590;"	d
+PRINTF_LEAST64_MODIFIER	smhasher/src/pstdint.h	604;"	d
+PTRDIFF_MAX	smhasher/src/pstdint.h	694;"	d
+PTRDIFF_MIN	smhasher/src/pstdint.h	697;"	d
+PUT_ULONG_LE	smhasher/src/md5.cpp	124;"	d	file:
+PermutationKeyTest	smhasher/src/KeysetTest.h	/^bool PermutationKeyTest ( hashfunc<hashtype> hash, uint32_t * blocks, int blockcount, bool testColl, bool testDist, bool drawDiagram )$/;"	f
+PermutationKeygenRecurse	smhasher/src/KeysetTest.h	/^void PermutationKeygenRecurse ( pfHash hash, uint32_t * blocks, int blockcount, int k, std::vector<hashtype> & hashes )$/;"	f
+PrintAvalancheDiagram	smhasher/src/AvalancheTest.cpp	/^void PrintAvalancheDiagram ( int x, int y, int reps, double scale, int * bins )$/;"	f
+PrintCollisions	smhasher/src/Stats.h	/^int PrintCollisions ( hashfunc<hashtype> hash, std::vector<keytype> & keys )$/;"	f
+ProcessDifferentials	smhasher/src/DifferentialTest.h	/^bool ProcessDifferentials ( std::vector<keytype> & diffs, int reps, bool dumpCollisions )$/;"	f
+R0	smhasher/src/sha1.cpp	107;"	d	file:
+R1	smhasher/src/sha1.cpp	108;"	d	file:
+R2	smhasher/src/sha1.cpp	109;"	d	file:
+R3	smhasher/src/sha1.cpp	110;"	d	file:
+R4	smhasher/src/sha1.cpp	111;"	d	file:
+READ_UINT32	smhasher/src/PMurHash.c	114;"	d	file:
+READ_UINT32	smhasher/src/PMurHash.c	118;"	d	file:
+READ_UINT32	smhasher/src/PMurHash.c	121;"	d	file:
+READ_UINT32	smhasher/src/PMurHash.c	126;"	d	file:
+ROTL32	MurmurHash3.c	47;"	d	file:
+ROTL32	smhasher/src/PMurHash.c	135;"	d	file:
+ROTL32	smhasher/src/PMurHash.c	138;"	d	file:
+ROTL32	smhasher/src/Platform.h	21;"	d
+ROTL32	smhasher/src/Platform.h	66;"	d
+ROTL64	MurmurHash3.c	48;"	d	file:
+ROTL64	smhasher/src/Platform.h	22;"	d
+ROTL64	smhasher/src/Platform.h	67;"	d
+ROTR32	smhasher/src/Platform.h	23;"	d
+ROTR32	smhasher/src/Platform.h	68;"	d
+ROTR64	smhasher/src/Platform.h	24;"	d
+ROTR64	smhasher/src/Platform.h	69;"	d
+Rand	smhasher/src/Random.h	/^  Rand( uint32_t seed )$/;"	f	struct:Rand
+Rand	smhasher/src/Random.h	/^  Rand()$/;"	f	struct:Rand
+Rand	smhasher/src/Random.h	/^struct Rand$/;"	s
+ReportCollisions	smhasher/src/KeysetTest.cpp	/^void ReportCollisions ( pfHash hash )$/;"	f
+Rot64	smhasher/src/Spooky.h	/^    static INLINE uint64 Rot64(uint64 x, int k)$/;"	f	class:SpookyHash
+Rotate	smhasher/src/City.cpp	/^static uint64 Rotate(uint64 val, int shift) {$/;"	f	file:
+RotateByAtLeast1	smhasher/src/City.cpp	/^static uint64 RotateByAtLeast1(uint64 val, int shift) {$/;"	f	file:
+S	smhasher/src/md5.cpp	168;"	d	file:
+SHA1_CTX	smhasher/src/sha1.h	/^struct SHA1_CTX$/;"	s
+SHA1_DIGEST_SIZE	smhasher/src/sha1.h	15;"	d
+SHA1_Final	smhasher/src/sha1.cpp	/^void SHA1_Final(SHA1_CTX* context, uint8_t digest[SHA1_DIGEST_SIZE])$/;"	f
+SHA1_Init	smhasher/src/sha1.cpp	/^void SHA1_Init(SHA1_CTX* context)$/;"	f
+SHA1_Transform	smhasher/src/sha1.cpp	/^void SHA1_Transform(uint32_t state[5], const uint8_t buffer[64])$/;"	f
+SHA1_Update	smhasher/src/sha1.cpp	/^void SHA1_Update(SHA1_CTX* context, const uint8_t* data, const size_t len)$/;"	f
+SIG_ATOMIC_MAX	smhasher/src/pstdint.h	729;"	d
+SIZE_MAX	smhasher/src/pstdint.h	294;"	d
+STDINT_H_UINTPTR_T_DEFINED	smhasher/src/pstdint.h	669;"	d
+STDINT_H_UINTPTR_T_DEFINED	smhasher/src/pstdint.h	721;"	d
+SanityTest	smhasher/src/KeysetTest.cpp	/^bool SanityTest ( pfHash hash, const int hashbits )$/;"	f
+SeedTest	smhasher/src/KeysetTest.h	/^bool SeedTest ( pfHash hash, int keycount, bool drawDiagram )$/;"	f
+SelfTest	smhasher/src/main.cpp	/^void SelfTest ( void )$/;"	f
+SetAffinity	smhasher/src/Platform.cpp	/^void SetAffinity ( int \/*cpu*\/ )$/;"	f
+SetAffinity	smhasher/src/Platform.cpp	/^void SetAffinity ( int cpu )$/;"	f
+ShiftMix	smhasher/src/City.cpp	/^static uint64 ShiftMix(uint64 val) {$/;"	f	file:
+Short	smhasher/src/Spooky.cpp	/^void SpookyHash::Short($/;"	f	class:SpookyHash
+ShortEnd	smhasher/src/Spooky.h	/^    static INLINE void ShortEnd(uint64 &h0, uint64 &h1, uint64 &h2, uint64 &h3)$/;"	f	class:SpookyHash
+ShortMix	smhasher/src/Spooky.h	/^    static INLINE void ShortMix(uint64 &h0, uint64 &h1, uint64 &h2, uint64 &h3)$/;"	f	class:SpookyHash
+SparseKeyTest	smhasher/src/KeysetTest.h	/^bool SparseKeyTest ( hashfunc<hashtype> hash, const int setbits, bool inclusive, bool testColl, bool testDist, bool drawDiagram  )$/;"	f
+SparseKeygenRecurse	smhasher/src/KeysetTest.h	/^void SparseKeygenRecurse ( pfHash hash, int start, int bitsleft, bool inclusive, keytype & k, std::vector<hashtype> & hashes )$/;"	f
+SpeedTest	smhasher/src/SpeedTest.cpp	/^double SpeedTest ( pfHash hash, uint32_t seed, const int trials, const int blocksize, const int align )$/;"	f
+SpookyHash	smhasher/src/Spooky.h	/^class SpookyHash$/;"	c
+SpookyHash128_test	smhasher/src/SpookyTest.cpp	/^void SpookyHash128_test(const void *key, int len, uint32_t seed, void *out) {$/;"	f
+SpookyHash32_test	smhasher/src/SpookyTest.cpp	/^void SpookyHash32_test(const void *key, int len, uint32_t seed, void *out) {$/;"	f
+SpookyHash64_test	smhasher/src/SpookyTest.cpp	/^void SpookyHash64_test(const void *key, int len, uint32_t seed, void *out) {$/;"	f
+SuperFastHash	smhasher/src/SuperFastHash.cpp	/^uint32_t SuperFastHash (const signed char * data, int len) {$/;"	f
+SuperFastHash	smhasher/src/SuperFastHash.cpp	/^void SuperFastHash     ( const void * key, int len, uint32_t \/*seed*\/, void * out )$/;"	f
+TESTUMAX	smhasher/src/pstdint.h	753;"	d
+TestDistribution	smhasher/src/Stats.h	/^double TestDistribution ( std::vector<hashtype> & hashes, bool drawDiagram )$/;"	f
+TestDistributionBytepairs	smhasher/src/Stats.h	/^double TestDistributionBytepairs ( std::vector<hashtype> & hashes, bool drawDiagram )$/;"	f
+TestDistributionFast	smhasher/src/Stats.h	/^void TestDistributionFast ( std::vector<hashtype> & hashes, double & dworst, double & davg )$/;"	f
+TestHashList	smhasher/src/Stats.h	/^bool TestHashList ( std::vector<hashtype> & hashes, bool \/*testColl*\/, bool testDist, bool drawDiagram )$/;"	f
+TestHashList	smhasher/src/Stats.h	/^bool TestHashList ( std::vector<hashtype> & hashes, std::vector<hashtype> & collisions, bool testDist, bool drawDiagram )$/;"	f
+TestKeyList	smhasher/src/Stats.h	/^bool TestKeyList ( hashfunc<hashtype> hash, std::vector<keytype> & keys, bool testColl, bool testDist, bool drawDiagram )$/;"	f
+TextKeyTest	smhasher/src/KeysetTest.h	/^bool TextKeyTest ( hashfunc<hashtype> hash, const char * prefix, const char * coreset, const int corelen, const char * suffix, bool drawDiagram )$/;"	f
+TinySpeedTest	smhasher/src/SpeedTest.cpp	/^void TinySpeedTest ( pfHash hash, int hashsize, int keysize, uint32_t seed, bool verbose, double & \/*outCycles*\/ )$/;"	f
+TwoBytesKeygen	smhasher/src/KeysetTest.cpp	/^void TwoBytesKeygen ( int maxlen, KeyCallback & c )$/;"	f
+TwoBytesTest2	smhasher/src/KeysetTest.h	/^bool TwoBytesTest2 ( pfHash hash, int maxlen, bool drawDiagram )$/;"	f
+UINT16_C	smhasher/src/pstdint.h	261;"	d
+UINT16_C	smhasher/src/pstdint.h	339;"	d
+UINT16_C	smhasher/src/pstdint.h	342;"	d
+UINT16_MAX	smhasher/src/pstdint.h	331;"	d
+UINT32_C	smhasher/src/pstdint.h	255;"	d
+UINT32_C	smhasher/src/pstdint.h	386;"	d
+UINT32_C	smhasher/src/pstdint.h	389;"	d
+UINT32_C	smhasher/src/pstdint.h	395;"	d
+UINT32_MAX	smhasher/src/pstdint.h	276;"	d
+UINT32_MAX	smhasher/src/pstdint.h	376;"	d
+UINT64_C	smhasher/src/pstdint.h	249;"	d
+UINT64_C	smhasher/src/pstdint.h	449;"	d
+UINT64_C	smhasher/src/pstdint.h	462;"	d
+UINT64_C	smhasher/src/pstdint.h	471;"	d
+UINT64_C	smhasher/src/pstdint.h	480;"	d
+UINT64_MAX	smhasher/src/pstdint.h	270;"	d
+UINT64_MAX	smhasher/src/pstdint.h	502;"	d
+UINT8_C	smhasher/src/pstdint.h	267;"	d
+UINT8_C	smhasher/src/pstdint.h	309;"	d
+UINT8_MAX	smhasher/src/pstdint.h	304;"	d
+UINTMAX_C	smhasher/src/pstdint.h	547;"	d
+UINTMAX_C	smhasher/src/pstdint.h	563;"	d
+UINTMAX_MAX	smhasher/src/pstdint.h	546;"	d
+UINTMAX_MAX	smhasher/src/pstdint.h	562;"	d
+UINTPTR_C	smhasher/src/pstdint.h	712;"	d
+UINTPTR_MAX	smhasher/src/pstdint.h	700;"	d
+UINT_FAST16_MAX	smhasher/src/pstdint.h	631;"	d
+UINT_FAST32_MAX	smhasher/src/pstdint.h	633;"	d
+UINT_FAST64_MAX	smhasher/src/pstdint.h	641;"	d
+UINT_FAST8_MAX	smhasher/src/pstdint.h	629;"	d
+UINT_LEAST16_MAX	smhasher/src/pstdint.h	594;"	d
+UINT_LEAST32_MAX	smhasher/src/pstdint.h	596;"	d
+UINT_LEAST64_MAX	smhasher/src/pstdint.h	605;"	d
+UINT_LEAST8_MAX	smhasher/src/pstdint.h	592;"	d
+ULONG_LONG_MAX	smhasher/src/pstdint.h	492;"	d
+UNALIGNED_LOAD32	smhasher/src/City.cpp	/^static uint32 UNALIGNED_LOAD32(const char *p) {$/;"	f	file:
+UNALIGNED_LOAD64	smhasher/src/City.cpp	/^static uint64 UNALIGNED_LOAD64(const char *p) {$/;"	f	file:
+UNALIGNED_SAFE	smhasher/src/PMurHash.c	122;"	d	file:
+UNALIGNED_SAFE	smhasher/src/PMurHash.c	129;"	d	file:
+UNALIGNED_SAFE	smhasher/src/PMurHash.c	88;"	d	file:
+Uint128High64	smhasher/src/City.h	/^inline uint64 Uint128High64(const uint128& x) { return x.second; }$/;"	f
+Uint128Low64	smhasher/src/City.h	/^inline uint64 Uint128Low64(const uint128& x) { return x.first; }$/;"	f
+Update	smhasher/src/Spooky.cpp	/^void SpookyHash::Update(const void *message, size_t length)$/;"	f	class:SpookyHash
+VerificationTest	smhasher/src/KeysetTest.cpp	/^bool VerificationTest ( pfHash hash, const int hashbits, uint32_t expected, bool verbose )$/;"	f
+VerifyHash	smhasher/src/main.cpp	/^void VerifyHash ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+WCHAR_MAX	smhasher/src/pstdint.h	659;"	d
+WCHAR_MIN	smhasher/src/pstdint.h	656;"	d
+WeakHashLen32WithSeeds	smhasher/src/City.cpp	/^static pair<uint64, uint64> WeakHashLen32WithSeeds($/;"	f	file:
+WindowedKeyTest	smhasher/src/KeysetTest.h	/^bool WindowedKeyTest ( hashfunc<hashtype> hash, const int windowbits, bool testCollision, bool testDistribution, bool drawDiagram )$/;"	f
+ZeroKeyTest	smhasher/src/KeysetTest.h	/^bool ZeroKeyTest ( pfHash hash, bool drawDiagram )$/;"	f
+_MURMURHASH1_H_	MurmurHash1.h	6;"	d
+_MURMURHASH2_H_	MurmurHash2.h	6;"	d
+_MURMURHASH3_H_	MurmurHash3.h	6;"	d
+_PSTDINT_H_INCLUDED	smhasher/src/pstdint.h	195;"	d
+_PSTDINT_H_INCLUDED	smhasher/src/pstdint.h	291;"	d
+__BIG_ENDIAN	smhasher/src/PMurHash.c	79;"	d	file:
+__BYTE_ORDER	smhasher/src/PMurHash.c	104;"	d	file:
+__BYTE_ORDER	smhasher/src/PMurHash.c	107;"	d	file:
+__BYTE_ORDER	smhasher/src/PMurHash.c	87;"	d	file:
+__BYTE_ORDER	smhasher/src/PMurHash.c	95;"	d	file:
+__BYTE_ORDER	smhasher/src/PMurHash.c	97;"	d	file:
+__LITTLE_ENDIAN	smhasher/src/PMurHash.c	82;"	d	file:
+_stricmp	smhasher/src/Platform.h	90;"	d
+assert	smhasher/src/Bitvec.cpp	/^void assert ( bool )$/;"	f
+assert	smhasher/src/Bitvec.cpp	9;"	d	file:
+blackhole	smhasher/src/Types.cpp	/^void blackhole ( uint32_t )$/;"	f
+blk	smhasher/src/sha1.cpp	104;"	d	file:
+blk0	smhasher/src/sha1.cpp	100;"	d	file:
+blk0	smhasher/src/sha1.cpp	102;"	d	file:
+bswap_32	smhasher/src/City.cpp	58;"	d	file:
+bswap_32	smhasher/src/City.cpp	64;"	d	file:
+bswap_64	smhasher/src/City.cpp	59;"	d	file:
+bswap_64	smhasher/src/City.cpp	65;"	d	file:
+buffer	smhasher/src/md5.cpp	/^    unsigned char buffer[64];   \/*!< data block being processed *\/$/;"	m	struct:__anon1	file:
+buffer	smhasher/src/sha1.h	/^    uint8_t  buffer[64];$/;"	m	struct:SHA1_CTX
+bytes	smhasher/src/Types.h	/^  uint8_t bytes[(_bits+7)\/8];$/;"	m	class:Blob
+c8fold	smhasher/src/Hashes.cpp	138;"	d	file:
+c8mix	smhasher/src/Hashes.cpp	139;"	d	file:
+calcBias	smhasher/src/AvalancheTest.h	/^void calcBias ( pfHash hash, std::vector<int> & counts, int reps, Rand & r )$/;"	f
+calcScore	smhasher/src/Stats.cpp	/^double calcScore ( const int * bins, const int bincount, const int keycount )$/;"	f
+chooseK	smhasher/src/Stats.cpp	/^double chooseK ( int n, int k )$/;"	f
+chooseUpToK	smhasher/src/Stats.cpp	/^double chooseUpToK ( int n, int k )$/;"	f
+clearbit	smhasher/src/Bitvec.cpp	/^void clearbit ( void * block, int len, uint32_t bit )$/;"	f
+collmap	smhasher/src/Types.h	/^  typedef CollisionMap<hashtype,ByteVec> collmap;$/;"	t	struct:CollisionCallback
+count	smhasher/src/sha1.h	/^    uint32_t count[2];$/;"	m	struct:SHA1_CTX
+countbits	smhasher/src/Bitslice.cpp	/^int countbits ( slice & v )$/;"	f
+countbits	smhasher/src/Bitvec.cpp	/^int countbits ( uint32_t v )$/;"	f
+countxor	smhasher/src/Bitslice.cpp	/^int countxor ( slice & a, slice & b )$/;"	f
+crc32	smhasher/src/crc.cpp	/^void crc32 ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+crc_table	smhasher/src/crc.cpp	/^static const uint32_t crc_table[256] = {$/;"	v	file:
+desc	smhasher/src/main.cpp	/^  const char * desc;$/;"	m	struct:HashInfo	file:
+digest_to_hex	smhasher/src/sha1.cpp	/^void digest_to_hex(const uint8_t digest[SHA1_DIGEST_SIZE], char *output)$/;"	f
+f3mix	smhasher/src/Stats.h	/^inline uint32_t f3mix ( uint32_t k )$/;"	f
+final	smhasher/src/lookup3.cpp	17;"	d	file:
+findHash	smhasher/src/main.cpp	/^HashInfo * findHash ( const char * name )$/;"	f
+flipbit	smhasher/src/Bitvec.cpp	/^void flipbit ( void * block, int len, uint32_t bit )$/;"	f
+flipbit	smhasher/src/Bitvec.h	/^inline void flipbit ( T & blob, uint32_t bit )$/;"	f
+flipbit	smhasher/src/Bitvec.h	/^template<> inline void flipbit ( uint32_t & blob, uint32_t bit ) { bit &= 31; blob ^= (uint32_t(1) << bit); }$/;"	f
+flipbit	smhasher/src/Bitvec.h	/^template<> inline void flipbit ( uint64_t & blob, uint32_t bit ) { bit &= 63; blob ^= (uint64_t(1) << bit); }$/;"	f
+fmix32	MurmurHash3.c	/^FORCE_INLINE uint32_t fmix32 ( uint32_t h )$/;"	f
+fmix64	MurmurHash3.c	/^FORCE_INLINE uint64_t fmix64 ( uint64_t k )$/;"	f
+foo	smhasher/src/Bitslice.cpp	/^void foo ( void )$/;"	f
+g_hashUnderTest	smhasher/src/main.cpp	/^HashInfo * g_hashUnderTest = NULL;$/;"	v
+g_hashes	smhasher/src/main.cpp	/^HashInfo g_hashes[] =$/;"	v
+g_inputVCode	smhasher/src/main.cpp	/^uint32_t g_inputVCode = 1;$/;"	v
+g_outputVCode	smhasher/src/main.cpp	/^uint32_t g_outputVCode = 1;$/;"	v
+g_resultVCode	smhasher/src/main.cpp	/^uint32_t g_resultVCode = 1;$/;"	v
+g_testAll	smhasher/src/main.cpp	/^bool g_testAll = false;$/;"	v
+g_testAvalanche	smhasher/src/main.cpp	/^bool g_testAvalanche   = false;$/;"	v
+g_testBIC	smhasher/src/main.cpp	/^bool g_testBIC         = false;$/;"	v
+g_testCyclic	smhasher/src/main.cpp	/^bool g_testCyclic      = false;$/;"	v
+g_testDiff	smhasher/src/main.cpp	/^bool g_testDiff        = false;$/;"	v
+g_testDiffDist	smhasher/src/main.cpp	/^bool g_testDiffDist    = false;$/;"	v
+g_testPermutation	smhasher/src/main.cpp	/^bool g_testPermutation = false;$/;"	v
+g_testSanity	smhasher/src/main.cpp	/^bool g_testSanity      = false;$/;"	v
+g_testSeed	smhasher/src/main.cpp	/^bool g_testSeed        = false;$/;"	v
+g_testSparse	smhasher/src/main.cpp	/^bool g_testSparse      = false;$/;"	v
+g_testSpeed	smhasher/src/main.cpp	/^bool g_testSpeed       = false;$/;"	v
+g_testText	smhasher/src/main.cpp	/^bool g_testText        = false;$/;"	v
+g_testTwoBytes	smhasher/src/main.cpp	/^bool g_testTwoBytes    = false;$/;"	v
+g_testWindow	smhasher/src/main.cpp	/^bool g_testWindow      = false;$/;"	v
+g_testZeroes	smhasher/src/main.cpp	/^bool g_testZeroes      = false;$/;"	v
+g_verify	smhasher/src/Types.cpp	/^uint32_t g_verify = 1;$/;"	v
+get16bits	smhasher/src/SuperFastHash.cpp	/^FORCE_INLINE uint16_t get16bits ( const void * p )$/;"	f
+getbit	smhasher/src/Bitvec.cpp	/^uint32_t getbit ( const void * block, int len, uint32_t bit )$/;"	f
+getbit	smhasher/src/Bitvec.h	/^inline uint32_t getbit ( T & blob, uint32_t bit )$/;"	f
+getbit	smhasher/src/Bitvec.h	/^template<> inline uint32_t getbit ( uint32_t & blob, uint32_t bit ) { return (blob >> (bit & 31)) & 1; }$/;"	f
+getbit	smhasher/src/Bitvec.h	/^template<> inline uint32_t getbit ( uint64_t & blob, uint32_t bit ) { return (blob >> (bit & 63)) & 1; }$/;"	f
+getbit_wrap	smhasher/src/Bitvec.cpp	/^uint32_t getbit_wrap ( const void * block, int len, uint32_t bit )$/;"	f
+getblock32	MurmurHash3.c	/^FORCE_INLINE uint32_t getblock32 ( const uint32_t * p, int i )$/;"	f
+getblock64	MurmurHash3.c	/^FORCE_INLINE uint64_t getblock64 ( const uint64_t * p, int i )$/;"	f
+glue3	smhasher/src/pstdint.h	746;"	d
+glue3_aux	smhasher/src/pstdint.h	745;"	d
+hash	smhasher/src/main.cpp	/^  pfHash hash;$/;"	m	struct:HashInfo	file:
+hashbits	smhasher/src/main.cpp	/^  int hashbits;$/;"	m	struct:HashInfo	file:
+hashfunc	smhasher/src/Types.h	/^  hashfunc ( pfHash h ) : m_hash(h)$/;"	f	class:hashfunc
+hashfunc	smhasher/src/Types.h	/^class hashfunc$/;"	c
+hashset	smhasher/src/Types.h	/^  typedef HashSet<hashtype> hashset;$/;"	t	struct:CollisionCallback
+hashvec	smhasher/src/Types.h	/^  typedef std::vector<hashtype> hashvec;$/;"	t	struct:HashCallback
+int16_t	smhasher/src/pstdint.h	/^  typedef signed int int16_t;$/;"	t
+int16_t	smhasher/src/pstdint.h	/^  typedef signed short int16_t;$/;"	t
+int32_t	smhasher/src/pstdint.h	/^  typedef signed int int32_t;$/;"	t
+int32_t	smhasher/src/pstdint.h	/^  typedef signed long int32_t;$/;"	t
+int32_t	smhasher/src/pstdint.h	/^  typedef signed short int32_t;$/;"	t
+int64_t	smhasher/src/pstdint.h	/^   __extension__ typedef long long int64_t;$/;"	t
+int64_t	smhasher/src/pstdint.h	/^   typedef __int64 int64_t;$/;"	t
+int64_t	smhasher/src/pstdint.h	/^   typedef long long int64_t;$/;"	t
+int8_t	smhasher/src/pstdint.h	/^    typedef signed char int8_t;$/;"	t
+int_fast16_t	smhasher/src/pstdint.h	/^typedef  int_least16_t  int_fast16_t;$/;"	t
+int_fast32_t	smhasher/src/pstdint.h	/^typedef  int_least32_t  int_fast32_t;$/;"	t
+int_fast64_t	smhasher/src/pstdint.h	/^  typedef  int_least64_t  int_fast64_t;$/;"	t
+int_fast8_t	smhasher/src/pstdint.h	/^typedef   int_least8_t   int_fast8_t;$/;"	t
+int_least16_t	smhasher/src/pstdint.h	/^  typedef  int16_t  int_least16_t;$/;"	t
+int_least32_t	smhasher/src/pstdint.h	/^  typedef  int32_t  int_least32_t;$/;"	t
+int_least64_t	smhasher/src/pstdint.h	/^    typedef  int64_t  int_least64_t;$/;"	t
+int_least8_t	smhasher/src/pstdint.h	/^  typedef   int8_t   int_least8_t;$/;"	t
+intmax_t	smhasher/src/pstdint.h	/^  typedef int32_t intmax_t;$/;"	t
+intmax_t	smhasher/src/pstdint.h	/^  typedef int64_t intmax_t;$/;"	t
+intptr_t	smhasher/src/pstdint.h	/^  typedef ptrdiff_t intptr_t;$/;"	t
+intptr_t	smhasher/src/pstdint.h	/^  typedef stdint_intptr_glue3( int,stdint_intptr_bits,_t)  intptr_t;$/;"	t
+ipad	smhasher/src/md5.cpp	/^    unsigned char ipad[64];     \/*!< HMAC: inner padding        *\/$/;"	m	struct:__anon1	file:
+isprime	smhasher/src/Types.cpp	/^bool isprime ( uint32_t x )$/;"	f
+k0	smhasher/src/City.cpp	/^static const uint64 k0 = 0xc3a5c85c97cb3127ULL;$/;"	v	file:
+k1	smhasher/src/City.cpp	/^static const uint64 k1 = 0xb492b66fbe98f273ULL;$/;"	v	file:
+k2	smhasher/src/City.cpp	/^static const uint64 k2 = 0x9ae16a3b2f90404fULL;$/;"	v	file:
+k3	smhasher/src/City.cpp	/^static const uint64 k3 = 0xc949d7c7509e6557ULL;$/;"	v	file:
+lookup3	smhasher/src/lookup3.cpp	/^uint32_t lookup3 ( const void * key, int length, uint32_t initval )$/;"	f
+lookup3_test	smhasher/src/lookup3.cpp	/^void lookup3_test ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+lrot	smhasher/src/Bitvec.h	/^inline void lrot ( T & blob, int c )$/;"	f
+lrot	smhasher/src/Bitvec.h	/^inline void lrot ( void * blob, int len, int c )$/;"	f
+lrot	smhasher/src/Bitvec.h	/^template<> inline void lrot ( uint32_t & blob, int c ) { blob = ROTL32(blob,c); }$/;"	f
+lrot	smhasher/src/Bitvec.h	/^template<> inline void lrot ( uint64_t & blob, int c ) { blob = ROTL64(blob,c); }$/;"	f
+lrot1	smhasher/src/Bitvec.cpp	/^void lrot1 ( void * blob, int len, int c )$/;"	f
+lrot32	smhasher/src/Bitvec.cpp	/^void lrot32 ( void * blob, int len, int c )$/;"	f
+lrot8	smhasher/src/Bitvec.cpp	/^void lrot8 ( void * blob, int len, int c )$/;"	f
+lshift	smhasher/src/Bitvec.h	/^inline void lshift ( T & blob, int c )$/;"	f
+lshift	smhasher/src/Bitvec.h	/^inline void lshift ( void * blob, int len, int c )$/;"	f
+lshift	smhasher/src/Bitvec.h	/^template<> inline void lshift ( uint32_t & blob, int c ) { blob <<= c; }$/;"	f
+lshift	smhasher/src/Bitvec.h	/^template<> inline void lshift ( uint64_t & blob, int c ) { blob <<= c; }$/;"	f
+lshift1	smhasher/src/Bitvec.cpp	/^void lshift1 ( void * blob, int len, int c )$/;"	f
+lshift32	smhasher/src/Bitvec.cpp	/^void lshift32 ( void * blob, int len, int c )$/;"	f
+lshift8	smhasher/src/Bitvec.cpp	/^void lshift8 ( void * blob, int nbytes, int c )$/;"	f
+m	MurmurHash2.cpp	/^  static const uint32_t m = 0x5bd1e995;$/;"	m	class:CMurmurHash2A	file:
+m_collisions	smhasher/src/Types.h	/^  hashset & m_collisions;$/;"	m	struct:CollisionCallback
+m_collmap	smhasher/src/Types.h	/^  collmap & m_collmap;$/;"	m	struct:CollisionCallback
+m_count	MurmurHash2.cpp	/^  uint32_t m_count;$/;"	m	class:CMurmurHash2A	file:
+m_count	smhasher/src/Types.h	/^  int m_count;$/;"	m	struct:KeyCallback
+m_data	smhasher/src/Spooky.h	/^    uint64 m_data[2*sc_numVars];   \/\/ unhashed data, for partial messages$/;"	m	class:SpookyHash
+m_hash	MurmurHash2.cpp	/^  uint32_t m_hash;$/;"	m	class:CMurmurHash2A	file:
+m_hash	smhasher/src/Types.h	/^  pfHash m_hash;$/;"	m	class:hashfunc
+m_hashes	smhasher/src/Types.h	/^  hashvec & m_hashes;$/;"	m	struct:HashCallback
+m_length	smhasher/src/Spooky.h	/^    size_t m_length;             \/\/ total length of the input so far$/;"	m	class:SpookyHash
+m_pfHash	smhasher/src/Types.h	/^  pfHash m_pfHash;$/;"	m	struct:CollisionCallback
+m_pfHash	smhasher/src/Types.h	/^  pfHash m_pfHash;$/;"	m	struct:HashCallback
+m_remainder	smhasher/src/Spooky.h	/^    uint8  m_remainder;          \/\/ length of unhashed data stashed in m_data$/;"	m	class:SpookyHash
+m_size	MurmurHash2.cpp	/^  uint32_t m_size;$/;"	m	class:CMurmurHash2A	file:
+m_state	smhasher/src/Spooky.h	/^    uint64 m_state[sc_numVars];  \/\/ internal state of the hash$/;"	m	class:SpookyHash
+m_tail	MurmurHash2.cpp	/^  uint32_t m_tail;$/;"	m	class:CMurmurHash2A	file:
+main	MurmurHash3.c	/^int main()$/;"	f
+main	smhasher/src/main.cpp	/^int main ( int argc, char ** argv )$/;"	f
+main	smhasher/src/pstdint.h	/^int main () {$/;"	f
+main	smhasher/src/sha1.cpp	/^int main(int argc, char** argv)$/;"	f
+maxBias	smhasher/src/AvalancheTest.cpp	/^double maxBias ( std::vector<int> & counts, int reps )$/;"	f
+md5	smhasher/src/md5.cpp	/^void md5( unsigned char *input, int ilen, unsigned char output[16] )$/;"	f
+md5_32	smhasher/src/md5.cpp	/^void md5_32            ( const void * key, int len, uint32_t \/*seed*\/, void * out )$/;"	f
+md5_context	smhasher/src/md5.cpp	/^md5_context;$/;"	t	typeref:struct:__anon1	file:
+md5_finish	smhasher/src/md5.cpp	/^void md5_finish( md5_context *ctx, unsigned char output[16] )$/;"	f
+md5_padding	smhasher/src/md5.cpp	/^static const unsigned char md5_padding[64] =$/;"	v	file:
+md5_process	smhasher/src/md5.cpp	/^static void md5_process( md5_context *ctx, unsigned char data[64] )$/;"	f	file:
+md5_starts	smhasher/src/md5.cpp	/^void md5_starts( md5_context *ctx )$/;"	f
+md5_update	smhasher/src/md5.cpp	/^void md5_update( md5_context *ctx, unsigned char *input, int ilen )$/;"	f
+md5hash	smhasher/src/md5.cpp	/^unsigned int md5hash ( const void * input, int len, unsigned int \/*seed*\/ )$/;"	f
+mix	smhasher/src/Random.h	/^  void mix ( void )$/;"	f	struct:Rand
+mix	smhasher/src/lookup3.cpp	7;"	d	file:
+mmix	MurmurHash2.cpp	204;"	d	file:
+name	smhasher/src/main.cpp	/^  const char * name;$/;"	m	struct:HashInfo	file:
+opad	smhasher/src/md5.cpp	/^    unsigned char opad[64];     \/*!< HMAC: outer padding        *\/$/;"	m	struct:__anon1	file:
+operator !=	smhasher/src/Types.h	/^  bool operator != ( const Blob & k ) const$/;"	f	class:Blob
+operator &	smhasher/src/Types.h	/^  int operator & ( int x )$/;"	f	class:Blob
+operator &=	smhasher/src/Types.h	/^  Blob & operator &= ( const Blob & k )$/;"	f	class:Blob
+operator ()	smhasher/src/Types.h	/^  inline T operator () ( const void * key, const int len, const uint32_t seed ) $/;"	f	class:hashfunc
+operator ()	smhasher/src/Types.h	/^  inline void operator () ( const void * key, const int len, const uint32_t seed, uint32_t * out )$/;"	f	class:hashfunc
+operator ()	smhasher/src/Types.h	/^  virtual void operator () ( const void * key, int len )$/;"	f	struct:CollisionCallback
+operator ()	smhasher/src/Types.h	/^  virtual void operator () ( const void * key, int len )$/;"	f	struct:HashCallback
+operator ()	smhasher/src/Types.h	/^  virtual void operator() ( const void * key, int len )$/;"	f	struct:KeyCallback
+operator <	smhasher/src/Types.h	/^  bool operator < ( const Blob & k ) const$/;"	f	class:Blob
+operator <<	smhasher/src/Types.h	/^  Blob operator << ( int c )$/;"	f	class:Blob
+operator <<=	smhasher/src/Types.h	/^  Blob & operator <<= ( int c )$/;"	f	class:Blob
+operator =	smhasher/src/Types.h	/^  Blob & operator = ( const Blob & k )$/;"	f	class:Blob
+operator ==	smhasher/src/Types.h	/^  bool operator == ( const Blob & k ) const$/;"	f	class:Blob
+operator >>	smhasher/src/Types.h	/^  Blob operator >> ( int c )$/;"	f	class:Blob
+operator >>=	smhasher/src/Types.h	/^  Blob & operator >>= ( int c )$/;"	f	class:Blob
+operator []	smhasher/src/Types.h	/^  const uint8_t & operator [] ( int i ) const$/;"	f	class:Blob
+operator []	smhasher/src/Types.h	/^  uint8_t & operator [] ( int i )$/;"	f	class:Blob
+operator ^	smhasher/src/Types.h	/^  Blob operator ^ ( const Blob & k ) const $/;"	f	class:Blob
+operator ^=	smhasher/src/Types.h	/^  Blob & operator ^= ( const Blob & k )$/;"	f	class:Blob
+operator pfHash	smhasher/src/Types.h	/^  inline operator pfHash ( void ) const$/;"	f	class:hashfunc
+parity	smhasher/src/Bitvec.cpp	/^uint32_t parity ( uint32_t v )$/;"	f
+pfHash	smhasher/src/Types.h	/^typedef void (*pfHash) ( const void * blob, const int len, const uint32_t seed, void * out );$/;"	t
+plot	smhasher/src/Stats.cpp	/^void plot ( double n )$/;"	f
+popcount	smhasher/src/Bitvec.cpp	/^uint32_t popcount ( uint32_t v )$/;"	f
+printbits	smhasher/src/Bitvec.cpp	/^void printbits ( const void * blob, int len )$/;"	f
+printbits2	smhasher/src/Bitvec.cpp	/^void printbits2 ( const uint8_t * k, int nbytes )$/;"	f
+printbytes	smhasher/src/Bitvec.cpp	/^void printbytes ( const void * blob, int len )$/;"	f
+printbytes2	smhasher/src/Bitvec.cpp	/^void printbytes2 ( const void * blob, int len )$/;"	f
+printhex32	smhasher/src/Bitvec.cpp	/^void printhex32 ( const void * blob, int len )$/;"	f
+r	MurmurHash2.cpp	/^  static const int r = 24;$/;"	m	class:CMurmurHash2A	file:
+rand_p	smhasher/src/Random.h	/^  void rand_p ( void * blob, int bytes )$/;"	f	struct:Rand
+rand_p	smhasher/src/Random.h	/^inline void rand_p ( void * blob, int bytes )$/;"	f
+rand_u32	smhasher/src/Random.h	/^  uint32_t rand_u32 ( void )$/;"	f	struct:Rand
+rand_u32	smhasher/src/Random.h	/^inline uint32_t rand_u32 ( void ) { return g_rand1.rand_u32(); }$/;"	f
+rand_u64	smhasher/src/Random.h	/^  uint64_t rand_u64 ( void ) $/;"	f	struct:Rand
+rand_u64	smhasher/src/Random.h	/^inline uint64_t rand_u64 ( void ) { return g_rand1.rand_u64(); }$/;"	f
+rdtsc	smhasher/src/Platform.h	/^__inline__ unsigned long long int rdtsc()$/;"	f
+rdtsc	smhasher/src/Platform.h	34;"	d
+reseed	smhasher/src/Random.h	/^  void reseed ( uint32_t seed )$/;"	f	struct:Rand
+reseed	smhasher/src/Random.h	/^  void reseed ( uint64_t seed )$/;"	f	struct:Rand
+reserve	smhasher/src/Types.h	/^  virtual void reserve ( int keycount )$/;"	f	struct:HashCallback
+reserve	smhasher/src/Types.h	/^  virtual void reserve ( int keycount )$/;"	f	struct:KeyCallback
+rol	smhasher/src/sha1.cpp	93;"	d	file:
+rot	smhasher/src/lookup3.cpp	5;"	d	file:
+rotl32	MurmurHash3.c	/^inline uint32_t rotl32 ( uint32_t x, int8_t r )$/;"	f
+rotl32	smhasher/src/Platform.h	/^inline uint32_t rotl32 ( uint32_t x, int8_t r )$/;"	f
+rotl64	MurmurHash3.c	/^inline uint64_t rotl64 ( uint64_t x, int8_t r )$/;"	f
+rotl64	smhasher/src/Platform.h	/^inline uint64_t rotl64 ( uint64_t x, int8_t r )$/;"	f
+rotr32	smhasher/src/Platform.h	/^inline uint32_t rotr32 ( uint32_t x, int8_t r )$/;"	f
+rotr64	smhasher/src/Platform.h	/^inline uint64_t rotr64 ( uint64_t x, int8_t r )$/;"	f
+rrot	smhasher/src/Bitvec.h	/^inline void rrot ( T & blob, int c )$/;"	f
+rrot	smhasher/src/Bitvec.h	/^inline void rrot ( void * blob, int len, int c )$/;"	f
+rrot	smhasher/src/Bitvec.h	/^template<> inline void rrot ( uint32_t & blob, int c ) { blob = ROTR32(blob,c); }$/;"	f
+rrot	smhasher/src/Bitvec.h	/^template<> inline void rrot ( uint64_t & blob, int c ) { blob = ROTR64(blob,c); }$/;"	f
+rrot1	smhasher/src/Bitvec.cpp	/^void rrot1 ( void * blob, int len, int c )$/;"	f
+rrot32	smhasher/src/Bitvec.cpp	/^void rrot32 ( void * blob, int len, int c )$/;"	f
+rrot8	smhasher/src/Bitvec.cpp	/^void rrot8 ( void * blob, int len, int c )$/;"	f
+rshift	smhasher/src/Bitvec.h	/^inline void rshift ( T & blob, int c )$/;"	f
+rshift	smhasher/src/Bitvec.h	/^inline void rshift ( void * blob, int len, int c )$/;"	f
+rshift	smhasher/src/Bitvec.h	/^template<> inline void rshift ( uint32_t & blob, int c ) { blob >>= c; }$/;"	f
+rshift	smhasher/src/Bitvec.h	/^template<> inline void rshift ( uint64_t & blob, int c ) { blob >>= c; }$/;"	f
+rshift1	smhasher/src/Bitvec.cpp	/^void rshift1 ( void * blob, int len, int c )$/;"	f
+rshift32	smhasher/src/Bitvec.cpp	/^void rshift32 ( void * blob, int len, int c )$/;"	f
+rshift8	smhasher/src/Bitvec.cpp	/^void rshift8 ( void * blob, int nbytes, int c )$/;"	f
+sc_blockSize	smhasher/src/Spooky.h	/^    static const size_t sc_blockSize = sc_numVars*8;$/;"	m	class:SpookyHash
+sc_bufSize	smhasher/src/Spooky.h	/^    static const size_t sc_bufSize = 2*sc_blockSize;$/;"	m	class:SpookyHash
+sc_const	smhasher/src/Spooky.h	/^    static const uint64 sc_const = 0xdeadbeefdeadbeefULL;$/;"	m	class:SpookyHash
+sc_numVars	smhasher/src/Spooky.h	/^    static const size_t sc_numVars = 12;$/;"	m	class:SpookyHash
+set	smhasher/src/Types.h	/^  void set ( const void * blob, size_t len )$/;"	f	class:Blob
+setbit	smhasher/src/Bitvec.cpp	/^void setbit ( void * block, int len, uint32_t bit )$/;"	f
+setbit	smhasher/src/Bitvec.cpp	/^void setbit ( void * block, int len, uint32_t bit, uint32_t val )$/;"	f
+setbit	smhasher/src/Bitvec.h	/^inline void setbit ( T & blob, uint32_t bit )$/;"	f
+setbit	smhasher/src/Bitvec.h	/^template<> inline void setbit ( uint32_t & blob, uint32_t bit ) { blob |= uint32_t(1) << (bit & 31); }$/;"	f
+setbit	smhasher/src/Bitvec.h	/^template<> inline void setbit ( uint64_t & blob, uint32_t bit ) { blob |= uint64_t(1) << (bit & 63); }$/;"	f
+sha1_32a	smhasher/src/sha1.cpp	/^void sha1_32a ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+slice	smhasher/src/Bitslice.cpp	/^typedef std::vector<uint32_t> slice;$/;"	t	file:
+slice_vec	smhasher/src/Bitslice.cpp	/^typedef std::vector<slice> slice_vec;$/;"	t	file:
+state	smhasher/src/md5.cpp	/^    unsigned long state[4];     \/*!< intermediate digest state  *\/$/;"	m	struct:__anon1	file:
+state	smhasher/src/sha1.h	/^    uint32_t state[5];$/;"	m	struct:SHA1_CTX
+stdint_int64_defined	smhasher/src/pstdint.h	443;"	d
+stdint_int64_defined	smhasher/src/pstdint.h	446;"	d
+stdint_int64_defined	smhasher/src/pstdint.h	459;"	d
+stdint_int64_defined	smhasher/src/pstdint.h	468;"	d
+stdint_int64_defined	smhasher/src/pstdint.h	477;"	d
+stdint_int64_defined	smhasher/src/pstdint.h	646;"	d
+stdint_intptr_bits	smhasher/src/pstdint.h	674;"	d
+stdint_intptr_bits	smhasher/src/pstdint.h	677;"	d
+stdint_intptr_bits	smhasher/src/pstdint.h	679;"	d
+stdint_intptr_bits	smhasher/src/pstdint.h	682;"	d
+stdint_intptr_glue3	smhasher/src/pstdint.h	689;"	d
+stdint_intptr_glue3_i	smhasher/src/pstdint.h	688;"	d
+stdint_least_defined	smhasher/src/pstdint.h	610;"	d
+sumhash	smhasher/src/Hashes.cpp	/^void sumhash ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+sumhash32	smhasher/src/Hashes.cpp	/^void sumhash32 ( const void * key, int len, uint32_t seed, void * out )$/;"	f
+test	smhasher/src/main.cpp	/^void test ( hashfunc<hashtype> hash, HashInfo * info )$/;"	f
+testHash	smhasher/src/main.cpp	/^void testHash ( const char * name )$/;"	f
+testRDTSC	smhasher/src/Platform.cpp	/^void testRDTSC ( void )$/;"	f
+test_data	smhasher/src/sha1.cpp	/^static char *test_data[] = {$/;"	v	file:
+test_results	smhasher/src/sha1.cpp	/^static char *test_results[] = {$/;"	v	file:
+test_shift	smhasher/src/Bitvec.cpp	/^bool test_shift ( void )$/;"	f
+test_window	smhasher/src/Bitvec.cpp	/^bool test_window ( void )$/;"	f
+test_window2	smhasher/src/Bitvec.cpp	/^bool test_window2 ( void )$/;"	f
+timehash	smhasher/src/SpeedTest.cpp	/^NEVER_INLINE int64_t timehash ( pfHash hash, const void * key, int len, int seed )$/;"	f
+total	smhasher/src/md5.cpp	/^    unsigned long total[2];     \/*!< number of bytes processed  *\/$/;"	m	struct:__anon1	file:
+uint128	smhasher/src/City.h	/^typedef std::pair<uint64, uint64> uint128;$/;"	t
+uint128_t	smhasher/src/Types.h	/^typedef Blob<128> uint128_t;$/;"	t
+uint16	smhasher/src/Spooky.h	/^  typedef  uint16_t  uint16;$/;"	t
+uint16	smhasher/src/Spooky.h	/^  typedef  unsigned __int16 uint16;$/;"	t
+uint16_t	smhasher/src/pstdint.h	/^  typedef unsigned int uint16_t;$/;"	t
+uint16_t	smhasher/src/pstdint.h	/^  typedef unsigned short uint16_t;$/;"	t
+uint256_t	smhasher/src/Types.h	/^typedef Blob<256> uint256_t;$/;"	t
+uint32	smhasher/src/City.h	/^typedef uint32_t uint32;$/;"	t
+uint32	smhasher/src/Spooky.h	/^  typedef  uint32_t  uint32;$/;"	t
+uint32	smhasher/src/Spooky.h	/^  typedef  unsigned __int32 uint32;$/;"	t
+uint32_in_expected_order	smhasher/src/City.cpp	51;"	d	file:
+uint32_in_expected_order	smhasher/src/City.cpp	71;"	d	file:
+uint32_t	MurmurHash1.h	/^typedef unsigned int uint32_t;$/;"	t
+uint32_t	MurmurHash2.h	/^typedef unsigned int uint32_t;$/;"	t
+uint32_t	MurmurHash3.h	/^typedef unsigned int uint32_t;$/;"	t
+uint32_t	smhasher/src/City.h	/^typedef unsigned int uint32_t;$/;"	t
+uint32_t	smhasher/src/PMurHash.c	56;"	d	file:
+uint32_t	smhasher/src/PMurHash.c	57;"	d	file:
+uint32_t	smhasher/src/pstdint.h	/^  typedef unsigned int uint32_t;$/;"	t
+uint32_t	smhasher/src/pstdint.h	/^  typedef unsigned long uint32_t;$/;"	t
+uint32_t	smhasher/src/pstdint.h	/^  typedef unsigned short uint32_t;$/;"	t
+uint64	smhasher/src/City.h	/^typedef uint64_t uint64;$/;"	t
+uint64	smhasher/src/Spooky.h	/^  typedef  uint64_t  uint64;$/;"	t
+uint64	smhasher/src/Spooky.h	/^  typedef  unsigned __int64 uint64;$/;"	t
+uint64_in_expected_order	smhasher/src/City.cpp	52;"	d	file:
+uint64_in_expected_order	smhasher/src/City.cpp	72;"	d	file:
+uint64_t	MurmurHash1.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	MurmurHash2.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	MurmurHash3.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	smhasher/src/City.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	smhasher/src/pstdint.h	/^   __extension__ typedef unsigned long long uint64_t;$/;"	t
+uint64_t	smhasher/src/pstdint.h	/^   typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	smhasher/src/pstdint.h	/^   typedef unsigned long long uint64_t;$/;"	t
+uint8	smhasher/src/City.h	/^typedef uint8_t uint8;$/;"	t
+uint8	smhasher/src/Spooky.h	/^  typedef  uint8_t   uint8;$/;"	t
+uint8	smhasher/src/Spooky.h	/^  typedef  unsigned __int8  uint8;$/;"	t
+uint8_t	MurmurHash1.h	/^typedef unsigned char uint8_t;$/;"	t
+uint8_t	MurmurHash2.h	/^typedef unsigned char uint8_t;$/;"	t
+uint8_t	MurmurHash3.h	/^typedef unsigned char uint8_t;$/;"	t
+uint8_t	smhasher/src/City.h	/^typedef unsigned char uint8_t;$/;"	t
+uint8_t	smhasher/src/PMurHash.c	58;"	d	file:
+uint8_t	smhasher/src/PMurHash.c	59;"	d	file:
+uint8_t	smhasher/src/pstdint.h	/^    typedef unsigned char uint8_t;$/;"	t
+uint_fast16_t	smhasher/src/pstdint.h	/^typedef uint_least16_t uint_fast16_t;$/;"	t
+uint_fast32_t	smhasher/src/pstdint.h	/^typedef uint_least32_t uint_fast32_t;$/;"	t
+uint_fast64_t	smhasher/src/pstdint.h	/^  typedef uint_least64_t uint_fast64_t;$/;"	t
+uint_fast8_t	smhasher/src/pstdint.h	/^typedef  uint_least8_t  uint_fast8_t;$/;"	t
+uint_least16_t	smhasher/src/pstdint.h	/^  typedef uint16_t uint_least16_t;$/;"	t
+uint_least32_t	smhasher/src/pstdint.h	/^  typedef uint32_t uint_least32_t;$/;"	t
+uint_least64_t	smhasher/src/pstdint.h	/^    typedef uint64_t uint_least64_t;$/;"	t
+uint_least8_t	smhasher/src/pstdint.h	/^  typedef  uint8_t  uint_least8_t;$/;"	t
+uintmax_t	smhasher/src/pstdint.h	/^  typedef uint32_t uintmax_t;$/;"	t
+uintmax_t	smhasher/src/pstdint.h	/^  typedef uint64_t uintmax_t;$/;"	t
+uintptr_t	smhasher/src/pstdint.h	/^  typedef stdint_intptr_glue3(uint,stdint_intptr_bits,_t) uintptr_t;$/;"	t
+verification	smhasher/src/main.cpp	/^  uint32_t verification;$/;"	m	struct:HashInfo	file:
+w	smhasher/src/Random.h	/^  uint32_t w;$/;"	m	struct:Rand
+whitehole	smhasher/src/Types.cpp	/^uint32_t whitehole ( void )$/;"	f
+window	smhasher/src/Bitvec.h	/^inline uint32_t window ( T & blob, int start, int count )$/;"	f
+window	smhasher/src/Bitvec.h	/^inline uint32_t window ( uint32_t & blob, int start, int count )$/;"	f
+window	smhasher/src/Bitvec.h	/^inline uint32_t window ( uint64_t & blob, int start, int count )$/;"	f
+window	smhasher/src/Bitvec.h	/^inline uint32_t window ( void * blob, int len, int start, int count )$/;"	f
+window1	smhasher/src/Bitvec.cpp	/^uint32_t window1 ( void * blob, int len, int start, int count )$/;"	f
+window32	smhasher/src/Bitvec.cpp	/^uint32_t window32 ( void * blob, int len, int start, int count )$/;"	f
+window8	smhasher/src/Bitvec.cpp	/^uint32_t window8 ( void * blob, int len, int start, int count )$/;"	f
+x	smhasher/src/Random.h	/^  uint32_t x;$/;"	m	struct:Rand
+x17	smhasher/src/Hashes.cpp	/^uint32_t x17 ( const void * key, int len, uint32_t h ) $/;"	f
+xoreq	smhasher/src/Bitslice.cpp	/^void xoreq ( slice & a, slice & b )$/;"	f
+y	smhasher/src/Random.h	/^  uint32_t y;$/;"	m	struct:Rand
+z	smhasher/src/Random.h	/^  uint32_t z;$/;"	m	struct:Rand
+~KeyCallback	smhasher/src/Types.h	/^  virtual ~KeyCallback()$/;"	f	struct:KeyCallback

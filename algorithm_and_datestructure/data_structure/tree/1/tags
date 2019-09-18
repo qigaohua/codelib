@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADD_IPv4_INFO	bin_search_tree.h	77;"	d
+FREE_IPv4_POOL	bin_search_tree.h	90;"	d
+GetNodeNum	bin_search_tree.c	/^int GetNodeNum(bst_tree * root)  $/;"	f
+PRINT_IPv4_POOL	bin_search_tree.h	87;"	d
+SEARCH_IPv4_INFO	bin_search_tree.h	80;"	d
+SEARCH_IPv4_NODE	bin_search_tree.h	83;"	d
+VALUE_TYPE	bin_search_tree.h	/^typedef unsigned int VALUE_TYPE;$/;"	t
+__JFIND_BIN_SEARCH_TREE_H__	bin_search_tree.h	2;"	d
+bin_search_tree	bin_search_tree.h	/^struct bin_search_tree$/;"	s
+bst_destroy	bin_search_tree.c	/^void bst_destroy(bst_tree* root, void (*key_free)(void* key))$/;"	f
+bst_init	bin_search_tree.c	/^bst_tree* bst_init()$/;"	f
+bst_insert	bin_search_tree.c	/^bst_tree* bst_insert(bst_tree **root, void* value, int (*node_cmp)(const void*, const void*))$/;"	f
+bst_print	bin_search_tree.c	/^void bst_print(bst_tree *root, void (*key_print)(void* key))$/;"	f
+bst_search	bin_search_tree.c	/^bst_tree* bst_search(bst_tree *root, VALUE_TYPE value, int (*node_search)(const void*, VALUE_TYPE))$/;"	f
+bst_tree	bin_search_tree.h	/^typedef struct bin_search_tree bst_tree;$/;"	t	typeref:struct:bin_search_tree
+end	bin_search_tree.h	/^	uint32_t end;$/;"	m	struct:ipv4_addr
+ipv4_addr	bin_search_tree.h	/^struct ipv4_addr {$/;"	s
+ipv4_cmp	bin_search_tree.c	/^int ipv4_cmp(const void* key, const void* node)$/;"	f
+ipv4_free	bin_search_tree.c	/^void ipv4_free(void* key)$/;"	f
+ipv4_pool	bin_search_tree.h	/^typedef bst_tree  ipv4_pool;$/;"	t
+ipv4_print	bin_search_tree.c	/^void ipv4_print(void* key)$/;"	f
+ipv4_search	bin_search_tree.c	/^int ipv4_search(const void* key, uint32_t value)$/;"	f
+key	bin_search_tree.h	/^    char* key;$/;"	m	struct:bin_search_tree
+left	bin_search_tree.h	/^    struct bin_search_tree *left,*right;$/;"	m	struct:bin_search_tree	typeref:struct:bin_search_tree::bin_search_tree
+right	bin_search_tree.h	/^    struct bin_search_tree *left,*right;$/;"	m	struct:bin_search_tree	typeref:struct:bin_search_tree::
+start	bin_search_tree.h	/^	uint32_t start;$/;"	m	struct:ipv4_addr
+type	bin_search_tree.h	/^	int type;		\/\/0-static 1-dynamic 2-reserve$/;"	m	struct:ipv4_addr

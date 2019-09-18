@@ -1,0 +1,131 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BLACK	gh_rbtree.h	/^    BLACK = 1,$/;"	e	enum:__anon1
+BLACK	rbtree.h	5;"	d
+BOOL	gh_rbtree.h	/^typedef int BOOL;$/;"	t
+Color	gh_rbtree.h	/^} Color;$/;"	t	typeref:enum:__anon1
+False	gh_rbtree.h	5;"	d
+Node	rbtree.h	/^}Node, *RBTree;$/;"	t	typeref:struct:RBTreeNode
+RBRoot	rbtree.h	/^}RBRoot;$/;"	t	typeref:struct:rb_root
+RBTree	rbtree.h	/^}Node, *RBTree;$/;"	t	typeref:struct:RBTreeNode
+RBTreeNode	rbtree.h	/^typedef struct RBTreeNode{$/;"	s
+RED	gh_rbtree.h	/^    RED = 0,$/;"	e	enum:__anon1
+RED	rbtree.h	4;"	d
+True	gh_rbtree.h	6;"	d
+Type	bin_search_tree.h	/^typedef unsigned int Type;$/;"	t
+Type	gh_rbtree.h	/^typedef unsigned int Type;$/;"	t
+Type	rbtree.h	/^typedef int Type;$/;"	t
+_RED_BLACK_TREE_H_	rbtree.h	2;"	d
+__BIN_SEARCH_TREE__	bin_search_tree.h	2;"	d
+__BIN_SEARCH_TREE__	gh_rbtree.h	2;"	d
+_bin_search_tree	bin_search_tree.h	/^struct _bin_search_tree {$/;"	s
+_red_black_tree	gh_rbtree.h	/^struct _red_black_tree {$/;"	s
+bst_for_cmp	bin_search_tree.c	/^static bst_pt bst_for_cmp(bst_pt *root, Type data)$/;"	f	file:
+bst_for_delete	bin_search_tree.c	/^int bst_for_delete(bst_pt *root, Type data)$/;"	f
+bst_for_insert	bin_search_tree.c	/^int bst_for_insert(bst_pt *root, Type data)$/;"	f
+bst_for_printf	bin_search_tree.c	/^void bst_for_printf(bst_pt root, void (*data_printf)(void* data))$/;"	f
+bst_for_search	bin_search_tree.c	/^bst_pt bst_for_search(bst_pt *root, Type data)$/;"	f
+bst_pt	bin_search_tree.h	/^typedef struct _bin_search_tree bst_t, *bst_pt;$/;"	t	typeref:struct:
+bst_set_print	bin_search_tree.c	/^void bst_set_print (value_handle func)$/;"	f
+bst_t	bin_search_tree.h	/^typedef struct _bin_search_tree bst_t, *bst_pt;$/;"	t	typeref:struct:_bin_search_tree
+color	gh_rbtree.h	/^    Color color; $/;"	m	struct:_red_black_tree
+color	rbtree.h	/^    unsigned char color;        \/\/ 颜色(RED 或 BLACK)$/;"	m	struct:RBTreeNode
+create_rbtree	rbtree.c	/^RBRoot* create_rbtree()$/;"	f
+create_rbtree_node	rbtree.c	/^static Node* create_rbtree_node(Type key, Node *parent, Node *left, Node* right)$/;"	f	file:
+data	bin_search_tree.h	/^	Type data;$/;"	m	struct:_bin_search_tree
+data	gh_rbtree.h	/^	Type data;$/;"	m	struct:_red_black_tree
+data_print	bin_search_tree.c	/^void data_print(void* data)$/;"	f
+default_value_cmp	gh_rbtree.c	/^int default_value_cmp(void *d1, void *d2)$/;"	f
+default_value_print	gh_rbtree.c	/^void default_value_print(void *d)$/;"	f
+delete_rbtree	rbtree.c	/^void delete_rbtree(RBRoot *root, Type key)$/;"	f
+destroy_rbtree	rbtree.c	/^void destroy_rbtree(RBRoot *root)$/;"	f
+example_value_cmp	gh_rbtree.c	/^int example_value_cmp(void *d1, void *d2)$/;"	f
+example_value_print	gh_rbtree.c	/^void example_value_print(void *d)$/;"	f
+inorder	rbtree.c	/^static void inorder(RBTree tree)$/;"	f	file:
+inorder_rbtree	rbtree.c	/^void inorder_rbtree(RBRoot *root) $/;"	f
+insert_rbtree	rbtree.c	/^int insert_rbtree(RBRoot *root, Type key)$/;"	f
+iterative_rbtree_search	rbtree.c	/^int iterative_rbtree_search(RBRoot *root, Type key)$/;"	f
+iterative_search	rbtree.c	/^static Node* iterative_search(RBTree x, Type key)$/;"	f	file:
+key	rbtree.h	/^    Type   key;                    \/\/ 关键字(键值)$/;"	m	struct:RBTreeNode
+lchild	bin_search_tree.h	/^	bst_t  *lchild;$/;"	m	struct:_bin_search_tree
+lchild	gh_rbtree.h	/^	rbt_t  *lchild;$/;"	m	struct:_red_black_tree
+left	rbtree.h	/^    struct RBTreeNode *left;    \/\/ 左孩子$/;"	m	struct:RBTreeNode	typeref:struct:RBTreeNode::RBTreeNode
+main	gh_rbtree.c	/^int main ()$/;"	f
+main	test.c	/^int main(int argc, char *argv[])  $/;"	f
+maximum	rbtree.c	/^static Node* maximum(RBTree tree)$/;"	f	file:
+minimum	rbtree.c	/^static Node* minimum(RBTree tree)$/;"	f	file:
+node	rbtree.h	/^    Node *node;$/;"	m	struct:rb_root
+node_info_print	gh_rbtree.c	/^void node_info_print(rbt_pt node)$/;"	f
+node_value	gh_rbtree.c	74;"	d	file:
+parent	gh_rbtree.h	/^    rbt_t  *parent;$/;"	m	struct:_red_black_tree
+parent	rbtree.h	/^    struct RBTreeNode *parent;    \/\/ 父结点$/;"	m	struct:RBTreeNode	typeref:struct:RBTreeNode::RBTreeNode
+postorder	rbtree.c	/^static void postorder(RBTree tree)$/;"	f	file:
+postorder_rbtree	rbtree.c	/^void postorder_rbtree(RBRoot *root)$/;"	f
+preorder	rbtree.c	/^static void preorder(RBTree tree)$/;"	f	file:
+preorder_rbtree	rbtree.c	/^void preorder_rbtree(RBRoot *root) $/;"	f
+print_rbtree	rbtree.c	/^void print_rbtree(RBRoot *root)$/;"	f
+rb_color	rbtree.c	13;"	d	file:
+rb_is_black	rbtree.c	15;"	d	file:
+rb_is_red	rbtree.c	14;"	d	file:
+rb_parent	rbtree.c	12;"	d	file:
+rb_root	rbtree.h	/^typedef struct rb_root{$/;"	s
+rb_set_black	rbtree.c	16;"	d	file:
+rb_set_color	rbtree.c	19;"	d	file:
+rb_set_parent	rbtree.c	18;"	d	file:
+rb_set_red	rbtree.c	17;"	d	file:
+rbnode_is_black	gh_rbtree.h	9;"	d
+rbnode_is_red	gh_rbtree.h	8;"	d
+rbnode_parent	gh_rbtree.h	13;"	d
+rbnode_set_black	gh_rbtree.h	10;"	d
+rbnode_set_red	gh_rbtree.h	11;"	d
+rbt_new_node	gh_rbtree.c	/^rbt_pt rbt_new_node (Type d, Color color)$/;"	f
+rbt_pt	gh_rbtree.h	/^typedef struct _red_black_tree rbt_t, *rbt_pt;$/;"	t	typeref:struct:
+rbt_t	gh_rbtree.h	/^typedef struct _red_black_tree rbt_t, *rbt_pt;$/;"	t	typeref:struct:_red_black_tree
+rbtree_delete	rbtree.c	/^void rbtree_delete(RBRoot *root, Node *node)$/;"	f
+rbtree_delete_fixup	gh_rbtree.c	/^int rbtree_delete_fixup(rbt_pt *root, rbt_pt node, rbt_pt parent) $/;"	f
+rbtree_delete_fixup	rbtree.c	/^static void rbtree_delete_fixup(RBRoot *root, Node *node, Node *parent)$/;"	f	file:
+rbtree_destroy	rbtree.c	/^static void rbtree_destroy(RBTree tree)$/;"	f	file:
+rbtree_for_cmp	gh_rbtree.c	/^static rbt_pt rbtree_for_cmp(rbt_pt *root, Type data)$/;"	f	file:
+rbtree_for_delete	gh_rbtree.c	/^int rbtree_for_delete(rbt_pt *root, Type data)$/;"	f
+rbtree_for_inorder	gh_rbtree.c	/^void rbtree_for_inorder(rbt_pt root)$/;"	f
+rbtree_for_insert	gh_rbtree.c	/^int rbtree_for_insert(rbt_pt *root, Type data)$/;"	f
+rbtree_for_postorder	gh_rbtree.c	/^void rbtree_for_postorder(rbt_pt root)$/;"	f
+rbtree_for_preorder	gh_rbtree.c	/^void rbtree_for_preorder(rbt_pt root)$/;"	f
+rbtree_insert	rbtree.c	/^static void rbtree_insert(RBRoot *root, Node *node)$/;"	f	file:
+rbtree_insert_fixup	gh_rbtree.c	/^int rbtree_insert_fixup(rbt_pt *root, rbt_pt node)$/;"	f
+rbtree_insert_fixup	rbtree.c	/^static void rbtree_insert_fixup(RBRoot *root, Node *node)$/;"	f	file:
+rbtree_left_rotate	gh_rbtree.c	/^static void rbtree_left_rotate(rbt_pt *root, rbt_pt x)$/;"	f	file:
+rbtree_left_rotate	rbtree.c	/^static void rbtree_left_rotate(RBRoot *root, Node *x)$/;"	f	file:
+rbtree_max_node	gh_rbtree.c	/^rbt_pt rbtree_max_node(rbt_pt node)$/;"	f
+rbtree_maximum	rbtree.c	/^int rbtree_maximum(RBRoot *root, int *val)$/;"	f
+rbtree_min_node	gh_rbtree.c	/^rbt_pt rbtree_min_node(rbt_pt node)$/;"	f
+rbtree_minimum	rbtree.c	/^int rbtree_minimum(RBRoot *root, int *val)$/;"	f
+rbtree_predecessor	gh_rbtree.c	/^rbt_pt rbtree_predecessor(rbt_pt node) $/;"	f
+rbtree_predecessor	rbtree.c	/^static Node* rbtree_predecessor(RBTree x)$/;"	f	file:
+rbtree_print	bin_search_tree.c	10;"	d	file:
+rbtree_print	bin_search_tree.c	7;"	d	file:
+rbtree_print	gh_rbtree.c	11;"	d	file:
+rbtree_print	gh_rbtree.c	8;"	d	file:
+rbtree_print	rbtree.c	/^static void rbtree_print(RBTree tree, Type key, int direction)$/;"	f	file:
+rbtree_right_rotate	gh_rbtree.c	/^static void rbtree_right_rotate(rbt_pt *root, rbt_pt y)$/;"	f	file:
+rbtree_right_rotate	rbtree.c	/^static void rbtree_right_rotate(RBRoot *root, Node *y)$/;"	f	file:
+rbtree_search	gh_rbtree.c	/^rbt_pt rbtree_search (rbt_pt *root, Type data) $/;"	f
+rbtree_search	rbtree.c	/^int rbtree_search(RBRoot *root, Type key)$/;"	f
+rbtree_set_cmp	gh_rbtree.c	/^void rbtree_set_cmp (value_comple func)$/;"	f
+rbtree_set_print	gh_rbtree.c	/^void rbtree_set_print (value_handle func)$/;"	f
+rbtree_successor	gh_rbtree.c	/^rbt_pt rbtree_successor(rbt_pt node)$/;"	f
+rbtree_successor	rbtree.c	/^static Node* rbtree_successor(RBTree x)$/;"	f	file:
+rchild	bin_search_tree.h	/^    bst_t  *rchild;$/;"	m	struct:_bin_search_tree
+rchild	gh_rbtree.h	/^    rbt_t  *rchild;$/;"	m	struct:_red_black_tree
+right	rbtree.h	/^    struct RBTreeNode *right;    \/\/ 右孩子$/;"	m	struct:RBTreeNode	typeref:struct:RBTreeNode::RBTreeNode
+search	rbtree.c	/^static Node* search(RBTree x, Type key)$/;"	f	file:
+value_cmp	gh_rbtree.c	/^static value_comple value_cmp = default_value_cmp;$/;"	v	file:
+value_comple	gh_rbtree.h	/^typedef int (*value_comple)(void *, void*);$/;"	t
+value_handle	bin_search_tree.h	/^typedef void (*value_handle)(void *);$/;"	t
+value_handle	gh_rbtree.h	/^typedef void (*value_handle)(void *);$/;"	t
+value_print	bin_search_tree.c	/^static value_handle value_print = NULL;$/;"	v	file:
+value_print	gh_rbtree.c	/^static value_handle value_print = default_value_print;$/;"	v	file:
