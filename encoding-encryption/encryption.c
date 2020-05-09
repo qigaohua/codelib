@@ -270,6 +270,9 @@ int sha1()
        int RSA_private_decrypt(int flen, unsigned char *from, unsigned char *to, RSA *rsa, int padding);
        int RSA_private_encrypt(int flen, unsigned char *from, unsigned char *to, RSA *rsa, int padding);
        int RSA_public_decrypt (int flen, unsigned char *from, unsigned char *to, RSA *rsa, int padding);
+
+       接口手册
+       https://www.openssl.org/docs/man1.1.1/man3/
 */
 
 
@@ -332,9 +335,24 @@ int rsa_encrypt(const char *encrypt_str, char *result)
 
     rsa = RSA_new();
     
+#if OPENSSL_VERSION_NUMBER < 0x10100000L
+    /* OpenSSL 1.0.2 and below */ 
     BN_hex2bn(&rsa->n, RSA_KEY_N);
     BN_hex2bn(&rsa->d, RSA_KEY_D);
     BN_hex2bn(&rsa->e, RSA_KEY_E);
+#else 
+    /* OpenSSL 1.1.0 and above */ 
+
+    // RSA_set0_key(rsa, BN_bin2bn(key_n, sizeof key_n, NULL),
+    //                   BN_bin2bn(key_e, sizeof key_e, NULL), 
+    //                   NULL);
+
+    BIGNUM *n, *e, *d;
+    BN_hex2bn(&n, RSA_KEY_N);
+    BN_hex2bn(&e, RSA_KEY_E);
+    BN_hex2bn(&d, RSA_KEY_D);
+    RSA_set0_key(rsa, n, e, d);
+#endif
 
     // 返回RSA模的位数，他用来判断需要给加密值分配空间的大小
     int dsize = RSA_size(rsa);
@@ -384,10 +402,24 @@ int rsa_decrypt(char *decrypt_str, char *result, int size)
 
     rsa = RSA_new();
     
+#if OPENSSL_VERSION_NUMBER < 0x10100000L
+    /* OpenSSL 1.0.2 and below */ 
     BN_hex2bn(&rsa->n, RSA_KEY_N);
     BN_hex2bn(&rsa->e, RSA_KEY_E);
     // rsa->n = BN_bin2bn(key_n, sizeof key_n, NULL);
     // rsa->e = BN_bin2bn(key_e, sizeof key_e, NULL);
+#else 
+    /* OpenSSL 1.1.0 and above */ 
+
+    // RSA_set0_key(rsa, BN_bin2bn(key_n, sizeof key_n, NULL),
+    //                   BN_bin2bn(key_e, sizeof key_e, NULL), 
+    //                   NULL);
+
+    BIGNUM *n, *e;
+    BN_hex2bn(&n, RSA_KEY_N);
+    BN_hex2bn(&e, RSA_KEY_E);
+    RSA_set0_key(rsa, n, e, d);
+#endif
 
     int decrypt_out_len = RSA_public_decrypt(decrypt_len, ds,
                 (unsigned char *)decrypt_buff, rsa, RSA_PKCS1_PADDING);
@@ -512,15 +544,31 @@ int main()
 
     rsa = RSA_new();
     
+#if OPENSSL_VERSION_NUMBER < 0x10100000L
+    /* OpenSSL 1.0.2 and below */ 
     BN_hex2bn(&rsa->n, RSA_KEY_N);
     BN_hex2bn(&rsa->d, RSA_KEY_D);
     BN_hex2bn(&rsa->e, RSA_KEY_E);
+#else 
+    /* OpenSSL 1.1.0 and above */ 
+
+    // RSA_set0_key(rsa, BN_bin2bn(key_n, sizeof key_n, NULL),
+    //                   BN_bin2bn(key_e, sizeof key_e, NULL), 
+    //                   NULL);
+
+    BIGNUM *n, *e, *d;
+    n = BN_new();e = BN_new();d = BN_new();
+    BN_hex2bn(&n, RSA_KEY_N);
+    BN_hex2bn(&e, RSA_KEY_E);
+    BN_hex2bn(&d, RSA_KEY_D);
+    RSA_set0_key(rsa, n, e, d);
+#endif
 
     int dsize = RSA_size(rsa);
 
-    const char *e = "1234567890abcdefghijklmn";
+    const char *str = "1234567890abcdefghijklmn";
     // 先对e加密，然后对加密结果编码进行传输
-    int ret = RSA_private_encrypt(strlen(e), (unsigned char *)e, r, rsa, RSA_PKCS1_PADDING);
+    int ret = RSA_private_encrypt(strlen(str), (unsigned char *)str, r, rsa, RSA_PKCS1_PADDING);
     RSA_free(rsa);
     if (ret != dsize) {return -1;}
     base64_encode(r2, sizeof r2, &olen, r, ret);
@@ -534,8 +582,23 @@ int main()
     base64_decode(r, sizeof r, &olen,(unsigned char *)r2, strlen(r2));
 
     rsa = RSA_new();
+#if OPENSSL_VERSION_NUMBER < 0x10100000L
+    /* OpenSSL 1.0.2 and below */ 
     BN_hex2bn(&rsa->n, RSA_KEY_N);
     BN_hex2bn(&rsa->e, RSA_KEY_E);
+#else 
+    /* OpenSSL 1.1.0 and above */ 
+
+    // RSA_set0_key(rsa, BN_bin2bn(key_n, sizeof key_n, NULL),
+    //                   BN_bin2bn(key_e, sizeof key_e, NULL), 
+    //                   NULL);
+
+    BIGNUM *n, *e;
+    n = BN_new();e = BN_new();
+    BN_hex2bn(&n, RSA_KEY_N);
+    BN_hex2bn(&e, RSA_KEY_E);
+    RSA_set0_key(rsa, n, e, NULL);
+#endif
 
     char buff[1024] = {0};
     int decrypt_out_len = RSA_public_decrypt(olen, r,
@@ -548,7 +611,7 @@ int main()
         return -2;    
     }
 
-    printf(">e: %s\n", buff);
+    printf(">str: %s\n", buff);
 
 #if 0
     char r[4096] = {0};
